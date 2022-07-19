@@ -20,7 +20,7 @@ jobs:
         uses: fifsky/ssh-action@master
         with: 
           command: |
-             cd ${{ env.SITES_PATH }}/${{ env.SITE_DIR }}/httpdocs/RitasDadQuiz
+             cd ${{ env.SITES_PATH }}/${{ env.SITE_DIR }}/httpdocs
              git pull
           host: ${{ secrets.HWSTAGE_IP }}
           user: ${{ secrets.STAGE_USER }}
