@@ -1,0 +1,31 @@
+name: Automatic Stage Deploy
+
+on: 
+  push:
+    branches:
+      - main
+
+#on: workflow_dispatch
+  
+jobs:
+  build:    
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: actions/checkout@v2
+          
+      - name: Access to the server
+        uses: fifsky/ssh-action@master
+        with: 
+          command: |
+             cd ${{ env.SITES_PATH }}/${{ env.SITE_DIR }}/httpdocs/RitasDadQuiz
+             git pull
+          host: ${{ secrets.HWSTAGE_IP }}
+          user: ${{ secrets.STAGE_USER }}
+          key: ${{ secrets.PRIMARY_DEPLOY_KEY }}
+                 
+    env:
+      SITES_PATH: /var/www/vhosts
+      SITE_DIR: aioismartcard.stage.demotesturl.net
