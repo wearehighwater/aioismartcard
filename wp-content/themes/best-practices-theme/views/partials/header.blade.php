@@ -1,23 +1,27 @@
-<nav class="navbar navbar-light navbar-expand-lg justify-content-between">
-
-  <div class="navbar__logo">
-    <a href="{{get_home_url()}}"><img src="" alt="" class=""></a>
+<header class="header">
+  <div class="container">
+    <strong class="logo">
+      <a href="{{get_home_url()}}"><img src="{{get_field('site_logo','options')['url']}}" alt="AIOI SYSTEMS"></a>
+    </strong>
+    <div class="nav-drop">
+      <div class="nav-area">
+        {{
+          wp_nav_menu(array(
+              'theme_location'  => 'primary',
+                'depth'           => 2,
+                'container'       => '',
+                'container_class' => '',
+                'menu_class'      => 'menu list-unstyled',
+                'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                'walker'          => new WP_Bootstrap_Navwalker()
+          ))
+        }}
+        <div class="btn-holder">
+          <a href="{{get_field('header_button','options')['url']}}" class="btn btn-secondary">{{get_field('header_button','options')['title']}}</a>
+          <a href="{{get_field('header_button_2','options')['url']}}" class="btn btn-primary">{{get_field('header_button_2','options')['title']}}</a>
+        </div>
+      </div>
+    </div>
   </div>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    {{
-    wp_nav_menu(array(
-        'theme_location'  => 'primary',
-          'depth'           => 2,
-          'container'       => 'div',
-          'container_class' => 'navbar-collapse',
-          'menu_class'      => 'nav navbar__nav navbar-nav ml-auto',
-          'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-          'walker'          => new WP_Bootstrap_Navwalker()
-    ))
-  }}
-  </div>
-</nav>
+  <a href="#" class="menu-opener"><span></span></a>
+</header>

@@ -6,6 +6,7 @@ module.exports = {
     "rules": {
         "declaration-no-important": true,
         "max-nesting-depth": 3,
+        "order/properties-alphabetical-order": null,
         "plugin/selector-bem-pattern": {
             "preset": "bem",
             "implicitComponents": true,

@@ -7,37 +7,37 @@
             <link rel="profile" href="http://gmpg.org/xfn/11">
 
             {!! wp_head() !!}
-            <link href="fonts/otari/stylesheet.css" rel="stylesheet">
-            <link href="fonts/halohand/stylesheet.css" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="{{mix('main.css')}}">
         @show
     </head>
 
-    <body>
-        @section('header')
-            @include('views.partials.header')
-        @show
+    <body {{body_class()}}>
+        <div class="wrapper">
+            @section('header')
+                @include('views.partials.header')
+            @show
 
-        @yield('pre-content')
+            @yield('pre-content')
 
-        @section('the-loop')
-            @if (have_posts())
-                @yield('content')
-            @else
-                @yield('no-content')
-            @endif
-        @show
+            @section('the-loop')
+                @if (have_posts())
+                    @yield('content')
+                @else
+                    @yield('no-content')
+                @endif
+            @show
 
-        @yield('post-content')
+            @yield('post-content')
 
-        @section('footer')
-            @include('views.partials.footer')
-        @show
+            @section('footer')
+                @include('views.partials.footer')
+            @show
 
-        @section('scripts')
-            <script src="{{mix('main.js')}}"></script>
-            <?php wp_footer(); ?>
-        @show
+            @section('scripts')
+                <script src="{{mix('main.js')}}"></script>
+                <?php wp_footer(); ?>
+            @show
+        </div>
     </body>
-
 </html>

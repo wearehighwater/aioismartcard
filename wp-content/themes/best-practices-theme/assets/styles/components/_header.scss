@@ -1,0 +1,73 @@
+/** @define header **/
+/* stylelint-disable */
+.header {
+  padding: 30px 0;
+  position: relative;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .btn-holder {
+    width: 210px;
+    margin-left: 48px;
+    margin-right: 27px;
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: 1339px) {
+      margin-left: 30px;
+      margin-right: 0;
+    }
+
+    @media (max-width: 1199.98px) {
+      width: 180px;
+    }
+
+    .btn {
+      @media (max-width: 1199.98px) {
+        width: 100%;
+        min-width: inherit;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .btn-secondary {
+    margin-bottom: 8px;
+    box-shadow: 2px 5px 10px rgba(0,0,0, 0.15);
+  }
+
+  .logo {
+    margin-top: -26px;
+    width: 300px;
+
+    @media (max-width: 1439px) {
+      width: 220px;
+      margin-top: -16px;
+    }
+
+    @media (max-width: 1199.98px) {
+      width: 180px;
+    }
+
+    img {
+      @include img-style;
+    }
+  }
+}
+
+
+.logo {
+  display: block;
+
+  a {
+    display: block;
+  }
+  img {
+    @include img-style;
+  }
+}

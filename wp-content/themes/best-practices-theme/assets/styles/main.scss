@@ -4,10 +4,10 @@
 // Variables
 @import 'variables';
 
-/* stylelint-disable */
+/* postcss-bem-linter: ignore */
 // Bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
-/* stylelint-enable */
+
 
 // Custom Mixins
 @import 'mixins';
@@ -17,4 +17,3 @@
 
 // Custom CSS
 @import 'custom';
-

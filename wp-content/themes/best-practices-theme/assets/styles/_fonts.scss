@@ -1,11 +1,48 @@
-// custom font mixin
-@mixin fontface ($fontfamily, $filename, $weight, $style) {
-  font-family: $fontfamily;
-  font-style: $style;
-  font-weight: $weight;
-  src: url('../fonts/#{$filename}.eot');
-  src: url('../fonts/#{$filename}.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/#{$filename}.woff') format('woff'),
-    url('../fonts/#{$filename}.ttf') format('truetype'),
-    url('../fonts/#{$filename}.svg#{$filename}') format('svg');
+/* stylelint-disable */
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.woff") format("woff"),
+  url("../fonts/icomoon.woff") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-play-circle-solid1:before {
+  content: "\e900";
+}
+.icon-check-light1:before {
+  content: "\e901";
+}
+.icon-times-regular1:before {
+  content: "\e902";
+}
+.icon-angle-down-regular2:before {
+  content: "\e903";
+}
+.icon-facebook-f-brands:before {
+  content: "\e904";
+}
+.icon-instagram-brands:before {
+  content: "\e905";
+}
+.icon-twitter-brands:before {
+  content: "\e906";
+}
+.icon-linkedin-in-brands:before {
+  content: "\e907";
 }

@@ -4,7 +4,4 @@
  */
 
 import 'bootstrap';
-
-$(document).ready(function(){
-	console.log(`hello world`);
-})
+import './layout.js';
