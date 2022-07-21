@@ -9,7 +9,7 @@
 				<div class="app-btn-holder">
 					@foreach(get_field('apps','options') as $apps)
 					<a href="{{$apps['app_link']}}"><img src="{{$apps['app_image']}}" alt="Mobile App"></a>
-					@wndforeach
+					@endforeach
 				</div>
 			</div>
 		</div>
