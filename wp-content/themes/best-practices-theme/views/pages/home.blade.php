@@ -26,8 +26,8 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-xl-8">
-					<h2 class="h1 animated-circle-white">The Future is Paperless</h2>
-					<p>Smart Card is the solution to waste, idle time, financial loss, and other challenges common throughout various economic spheres. These business card-sized RFID tags utilize the latest technology to display all kinds of information without the need for excessive amounts of paper, from barcodes and product names to labels and much more.</p>
+					<h2 class="h1 animated-circle-white">{{get_field('home_section_1_head')}}</h2>
+					<p>{!!get_field('home_section_1_content')!!}</p>
 				</div>
 			</div>
 		</div>
@@ -38,26 +38,26 @@
 				<div class="graph-line">
 					<img src="{{public_path('images/bg-line2.png')}}" alt="image-description">
 				</div>
-				<h2 class="h1 animated-circle-blue">Technology that is Easy<br> to Use and Hard to Resist</h2>
+				<h2 class="h1 animated-circle-blue">{!!get_field('home_section_2_head')!!}</h2>
 				<div class="graph-line style01">
 					<img src="{{public_path('images/bg-line3.png')}}" alt="image-description">
 				</div>
 				<div class="col-holder">
+					@foreach(get_field('home_section_2_content') as $section2)
 					<div class="col-area">
-						<div class="ico-holder"><img src="{{public_path('images/icon7.svg')}}" alt="image-description" width="57" height="56px"></div>
-						<h2>Innovative Design</h2>
-						<p>Each card is only 3.2mm thick and requires no batteries despite its electronic capabilities.</p>
+						<div class="ico-holder"><img src="{{$section2['home_section_2_content_icon']['url']}}" alt="Icon-{{$loop->iteration}}"
+							@if($loop->iteration == 1) 
+							width="57" height="56"
+							@elseif($loop->iteration == 2)
+							width="56" height="56"
+							@else
+							width="55" height="55"
+							@endif
+						></div>
+						<h2>{{$section2['home_section_2_content_title']}}</h2>
+						<p>{!!$section2['home_section_2_content_description']!!}</p>
 					</div>
-					<div class="col-area">
-						<div class="ico-holder"><img src="{{public_path('images/icon8.svg')}}" alt="image-description" width="56" height="56"></div>
-						<h2>Fast Data Transfer</h2>
-						<p>Smart Card is readable at the high speed of 120m per minute with no slowdown.</p>
-					</div>
-					<div class="col-area">
-						<div class="ico-holder"><img src="{{public_path('images/icon9.svg')}}" alt="image-description" width="55" height="55"></div>
-						<h2>Smart Device Compatibility</h2>
-						<p>Near Field Communication (NFC) technology enables you to seamlessly overwrite the display with the desired information from your mobile device.</p>
-					</div>
+					@endforeach
 				</div>
 			</div>
 		</div>
@@ -67,16 +67,13 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6">
 					<div class="video-box">
-						<a href="#">
-							<img src="{{public_path('images/image2.jpg')}}" alt="image-description">
-							<span class="btn-play"></span>
-						</a>
+						{!!get_field('section_3_video')!!}
 					</div>
 				</div>
 				<div class="col-lg-5">
 					<div class="description">
-						<h2 class="h1 animated-circle-blue">Eliminate Paper Expenses Once and For All</h2>
-						<p>U.S. businesses spend a total of $8 billion annually on purchasing, managing, and ultimately wasting paper. When widely applied to your business, Smart Card can greatly diminish or even eliminate the need for conventional paper labels, helping to alleviate such a costly burden.</p>
+						<h2 class="h1 animated-circle-blue">{!!get_field('section_3_head')!!}</h2>
+						<p>{!!get_field('section_3_content')!!}</p>
 					</div> 
 				</div>
 			</div>
