@@ -67,13 +67,13 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6">
 					<div class="video-box">
-						{!!$section2['section_3_video']!!}
+						{!!get_field('section_3_video')!!}
 					</div>
 				</div>
 				<div class="col-lg-5">
 					<div class="description">
-						<h2 class="h1 animated-circle-blue">{!!$section2['section_3_head']!!}</h2>
-						<p>{!!$section2['section_3_content']!!}</p>
+						<h2 class="h1 animated-circle-blue">{!!get_field('section_3_head')!!}</h2>
+						<p>{!!get_field('section_3_content')!!}</p>
 					</div> 
 				</div>
 			</div>
