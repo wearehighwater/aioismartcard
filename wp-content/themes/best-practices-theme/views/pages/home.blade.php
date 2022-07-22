@@ -8,9 +8,9 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6">
 					<div class="description">
-						<h1 class="animated-circle-blue"><span class="d-block">Smart Card:</span> The ePaper Label<br> that Saves You Money</h1>
+						<h1 class="animated-circle-blue"><span class="d-block">{!!get_field('visual_head')!!}</span> {!!get_field('visual_subhead')!!}</h1>
 						<div class="graph-line">
-							<img src="{{public_path('images/bg-line1.png')}}" alt="image-description">
+							<img src="{{get_field('visual_image)')}}" alt="Visual">
 						</div>
 					</div>
 				</div>
