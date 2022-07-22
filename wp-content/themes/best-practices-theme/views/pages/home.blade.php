@@ -47,7 +47,7 @@
 					<div class="col-area">
 						<div class="ico-holder"><img src="{{$section2['home_section_2_content_icon']['url']}}" alt="Icon-{{$loop->iteration}}"
 							@if($loop->iteration == 1) 
-							width="57" height="56px"
+							width="57" height="56"
 							@elseif($loop->iteration == 2)
 							width="56" height="56"
 							@else
@@ -67,16 +67,13 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6">
 					<div class="video-box">
-						<a href="#">
-							<img src="{{public_path('images/image2.jpg')}}" alt="image-description">
-							<span class="btn-play"></span>
-						</a>
+						{!!$section2['section_3_video']!!}
 					</div>
 				</div>
 				<div class="col-lg-5">
 					<div class="description">
-						<h2 class="h1 animated-circle-blue">Eliminate Paper Expenses Once and For All</h2>
-						<p>U.S. businesses spend a total of $8 billion annually on purchasing, managing, and ultimately wasting paper. When widely applied to your business, Smart Card can greatly diminish or even eliminate the need for conventional paper labels, helping to alleviate such a costly burden.</p>
+						<h2 class="h1 animated-circle-blue">{!!$section2['section_3_head']!!}</h2>
+						<p>{!!$section2['section_3_content']!!}</p>
 					</div> 
 				</div>
 			</div>
