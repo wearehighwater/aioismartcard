@@ -16,7 +16,7 @@
 				</div>
 				<div class="col-lg-6">
 					<div class="image">
-						<img src="{{get_field('visual_image)')}}" alt="image-description">
+						<img src="{{get_field('visual_image')}}" alt="Viual">
 					</div>
 				</div>
 			</div>
