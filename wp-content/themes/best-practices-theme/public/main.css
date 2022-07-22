@@ -10671,9 +10671,17 @@ h2 {
   padding-bottom: 170px;
 }
 
+.visual-area.style01 .image {
+  position: relative;
+}
+
 .visual-area.style01 .image img {
   margin: 0;
-  float: right;
+  float: none;
+}
+
+.visual-area.style01 .image a {
+  display: block;
 }
 
 .visual-area.style01 .description {
@@ -11432,6 +11440,22 @@ h2 {
   padding: 0 0 0 120px;
 }
 
+.features-area2 .description .h1 {
+  position: relative;
+}
+
+.features-area2 .description .h1:before {
+  position: absolute;
+  left: -82px;
+  top: -10px;
+  content: '';
+  border-radius: 100%;
+  background: #3254fe;
+  width: 60px;
+  height: 60px;
+  z-index: 4;
+}
+
 .features-area2 .graph-line {
   top: -400px;
   left: 30px;
@@ -11483,6 +11507,82 @@ h2 {
 
 .info-section2 {
   padding: 250px 0;
+}
+
+.info-section2 .image {
+  max-width: 550px;
+  position: relative;
+}
+
+.info-section2 .image:before {
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  content: '';
+  background: url(./images/shadow-image.png?9efcbfd6171e71627f2645cf29c71dcb) no-repeat;
+  width: 751px;
+  height: 57px;
+  margin-left: -375px;
+}
+
+.info-section2 .image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.info-section2 .h1 {
+  position: relative;
+}
+
+.info-section2 .h1:before {
+  position: absolute;
+  left: 50%;
+  top: -113px;
+  margin-left: -100px;
+  content: '';
+  border-radius: 100%;
+  background: #3254fe;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+}
+
+.info-section2 .graph-line {
+  top: -400px;
+}
+
+.info-section2 .description {
+  position: relative;
+  padding: 0 0 0 100px;
+  margin-right: -20px;
+}
+
+.image-text-section {
+  position: relative;
+  background: #2c49dc;
+  color: #fff;
+}
+
+.image-text-section .graph-line {
+  top: -400px;
+  left: 40px;
+}
+
+.image-text-section .h1 {
+  position: relative;
+}
+
+.image-text-section .h1:before {
+  position: absolute;
+  left: 0;
+  top: -70px;
+  content: '';
+  border-radius: 100%;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  z-index: 4;
 }
 
 /** @define header **/

@@ -122,9 +122,14 @@ a {
     }
 
     .image {
+      position: relative;
       img {
         margin: 0;
-        float: right;
+        float: none;
+      }
+
+      a {
+        display: block;
       }
     }
 
@@ -829,6 +834,22 @@ a {
   .description {
     position: relative;
     padding: 0 0 0 120px;
+
+    .h1 {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        left: -82px;
+        top: -10px;
+        content: '';
+        border-radius: 100%;
+        background: #3254fe;
+        width: 60px;
+        height: 60px;
+        z-index: 4;
+      }
+    }
   }
 
   .graph-line {
@@ -881,4 +902,78 @@ a {
 
 .info-section2 {
   padding: 250px 0;
+
+  .image {
+    max-width: 550px;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      left: 50%;
+      bottom: -15px;
+      content: '';
+      background: url('../../img/shadow-image.png') no-repeat;
+      width: 751px;
+      height: 57px;
+      margin-left: -375px; 
+    }
+
+    img {
+      @include img-style;
+    }
+  }
+
+  .h1 {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      left: 50%;
+      top: -113px;
+      margin-left: -100px;
+      content: '';
+      border-radius: 100%;
+      background: #3254fe;
+      width: 60px;
+      height: 60px;
+      z-index: 1;
+    }
+  }
+
+  .graph-line {
+    top: -400px;
+  }
+
+  .description {
+    position: relative;
+    padding: 0 0 0 100px;
+    margin-right: -20px;
+  }
+}
+
+.image-text-section {
+  position: relative;
+  background: #2c49dc;
+  color: #fff;
+
+  .graph-line {
+    top: -400px;
+    left: 40px;
+  }
+
+  .h1 {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        left: 0;
+        top: -70px;
+        content: '';
+        border-radius: 100%;
+        background: #fff;
+        width: 60px;
+        height: 60px;
+        z-index: 4;
+      }
+    }
 }
