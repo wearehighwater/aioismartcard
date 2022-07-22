@@ -10,13 +10,13 @@
 					<div class="description">
 						<h1 class="animated-circle-blue"><span class="d-block">{!!get_field('visual_head')!!}</span> {!!get_field('visual_subhead')!!}</h1>
 						<div class="graph-line">
-							<img src="{{get_field('visual_image)')}}" alt="Visual">
+							<img src="{{public_path('images/bg-line1.png')}}" alt="image-description">
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="image">
-						<img src="{{public_path('images/image1.png')}}" alt="image-description">
+						<img src="{{get_field('visual_image)')}}" alt="image-description">
 					</div>
 				</div>
 			</div>
