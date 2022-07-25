@@ -11469,6 +11469,10 @@ h2 {
   }
 }
 
+.specifications-area .container {
+  position: relative;
+}
+
 .specifications-area:before {
   position: absolute;
   left: 70%;
@@ -11500,6 +11504,12 @@ h2 {
 .specifications-area .pulsating-circle.big-circle .circle {
   width: 300px;
   height: 300px;
+}
+
+.specifications-area .pulsating-circle.big-circle.add {
+  bottom: auto;
+  top: 150px;
+  right: -80px;
 }
 
 .specifications-area .h1 {
@@ -12168,19 +12178,17 @@ h2 {
   left: 24px;
 }
 
-.features-area2 .graph-line:before {
-  top: auto;
-  bottom: -26px;
-}
-
 .features-area2 .graph-line.add {
   top: -38px;
 }
 
-.features-area2 .graph-line.add:before {
+.features-area2 .pulsating-circle {
+  bottom: 13px;
+}
+
+.features-area2 .pulsating-circle.add {
   left: auto;
-  right: -10px;
-  bottom: -39px;
+  right: 40px;
 }
 
 .info-section {
@@ -12281,11 +12289,10 @@ h2 {
   left: 101px;
 }
 
-.info-section2 .graph-line:before {
-  top: auto;
-  bottom: -20px;
+.info-section2 .pulsating-circle {
   left: auto;
-  right: -30px;
+  right: 20px;
+  bottom: 20px;
 }
 
 .info-section2 .description {
@@ -12318,23 +12325,23 @@ h2 {
   left: 128px;
 }
 
-.image-text-section .graph-line:before {
-  bottom: -31px;
-  left: -20px;
-  top: auto;
-  background: #fff;
+.image-text-section .pulsating-circle {
+  left: -11px;
+  bottom: 12px;
 }
 
-.image-text-section .col-lg-6 {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
+@media (max-width: 991.98px) {
+  .image-text-section .col-lg-6 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 
-.image-text-section .col-lg-6:first-child {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  .image-text-section .col-lg-6:first-child {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 .image-text-section .description {
@@ -12422,6 +12429,19 @@ h2 {
 .visual-area2 .graph-line {
   top: 158px;
   left: 22px;
+}
+
+.visual-area2 .pulsating-circle {
+  bottom: auto;
+  top: -10px;
+  left: 3px;
+}
+
+.visual-area2 .pulsating-circle.add {
+  left: auto;
+  right: 30px;
+  top: auto;
+  bottom: 30px;
 }
 
 @media (max-width: 991.98px) {
@@ -12537,10 +12557,15 @@ h2 {
   top: -140px;
 }
 
-.products-area .graph-line:before {
-  top: auto;
-  bottom: -15px;
-  left: -25px;
+.products-area .pulsating-circle {
+  bottom: 30px;
+  left: -15px;
+}
+
+.products-area .pulsating-circle.big-circle {
+  z-index: 6;
+  left: -50px;
+  bottom: -290px;
 }
 
 .prod-info {
@@ -13540,6 +13565,7 @@ h2 {
   position: relative;
   padding: 117px 0 122px;
   background: #dee9f5;
+  z-index: 99;
 }
 
 @media (max-width: 1199px) {
