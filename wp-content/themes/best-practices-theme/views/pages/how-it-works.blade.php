@@ -9,7 +9,7 @@
                         <h1><span class="d-block">The Process of Replacing Paper is Simple</h1>
                         <p>Smart Card enables users to easily read, write, and overwrite various types of displayed information.</p>
                         <div class="graph-line">
-                            <img src="{{public_path('images/bg-line10.png')}}" alt="image-description">
+                            <img src="{{public_path('images/how-bg-line1.svg')}}" width="694" height="575" alt="image-description">
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,10 @@
                 <div class="col-lg-7">
                     <div class="description">
                         <div class="graph-line">
-                            <img src="{{public_path('images/bg-line11.png')}}" alt="image-description">
+                            <img src="{{public_path('images/how-bg-line2.svg')}}" width="688" height="357" alt="image-description">
+                        </div>
+                        <div class="graph-line">
+                            <img src="{{public_path('images/how-bg-line3.svg')}}" width="703" height="692" alt="image-description">
                         </div>
                         <h2 class="h1">Dustproof and Waterproof</h2>
                         <p>Smart Card has earned an Ingress Protection rating of IP56, which means the device allows the entry of little dust and almost no water, contributing to its longevity.</p>
@@ -78,7 +81,7 @@
                 <div class="col-lg-7">
                     <div class="description">
                         <div class="graph-line">
-                            <img src="{{public_path('images/bg-line12.png')}}" alt="image-description">
+                            <img src="{{public_path('images/how-bg-line4.svg')}}" width="375" height="322" alt="image-description">
                         </div>
                         <h2 class="h1">Almost No Electricity Required</h2>
                         <p>Electricity is only necessary for overwriting information. When Smart Cards are simply displaying data – as they are for a majority of their use – no electricity is required.</p>
@@ -93,7 +96,7 @@
                 <div class="col-lg-6">
                     <div class="description">
                         <div class="graph-line">
-                            <img src="{{public_path('images/bg-line13.png')}}" alt="image-description">
+                            <img src="{{public_path('images/how-bg-line5.svg')}}" width="968" height="353" alt="image-description">
                         </div>
                         <h2 class="h1">Immediate Integration</h2>
                         <p>The barcodes reproduced on a Smart Card display are legible to nearly all terminals, allowing them to be instantly incorporated into existing systems.</p>

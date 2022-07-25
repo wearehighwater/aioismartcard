@@ -10772,14 +10772,13 @@ h2 {
 }
 
 .visual-area.style01 .graph-line {
-  top: 80px;
-  position: relative;
+  top: 92px;
 }
 
 .visual-area.style01 .graph-line:before {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: -8px;
+  top: -29px;
   content: '';
   border-radius: 100%;
   background: #3254fe;
@@ -12100,23 +12099,12 @@ h2 {
 .features-area2 .description {
   position: relative;
   padding: 0 21px 32px 120px;
+  letter-spacing: 0.4px;
 }
 
 .features-area2 .description .h1 {
   position: relative;
   margin-bottom: 20px;
-}
-
-.features-area2 .description .h1:before {
-  position: absolute;
-  left: -106px;
-  top: -10px;
-  content: '';
-  border-radius: 100%;
-  background: #3254fe;
-  width: 60px;
-  height: 60px;
-  z-index: 4;
 }
 
 .features-area2 .image img {
@@ -12129,10 +12117,26 @@ h2 {
   left: 24px;
 }
 
+.features-area2 .graph-line:before {
+  top: auto;
+  bottom: -26px;
+}
+
+.features-area2 .graph-line.add {
+  top: -38px;
+}
+
+.features-area2 .graph-line.add:before {
+  left: auto;
+  right: -10px;
+  bottom: -39px;
+}
+
 .info-section {
   position: relative;
   padding: 0 0 20px;
   text-align: center;
+  letter-spacing: 0.2px;
 }
 
 .info-section .h1 {
@@ -12209,28 +12213,23 @@ h2 {
   margin: 0 0 23px;
 }
 
-.info-section2 .h1:before {
-  position: absolute;
-  left: 50%;
-  top: -81px;
-  margin-left: -28px;
-  content: '';
-  border-radius: 100%;
-  background: #3254fe;
-  width: 60px;
-  height: 60px;
-  z-index: 1;
-}
-
 .info-section2 .graph-line {
   top: -304px;
   left: 101px;
+}
+
+.info-section2 .graph-line:before {
+  top: auto;
+  bottom: -20px;
+  left: auto;
+  right: -30px;
 }
 
 .info-section2 .description {
   position: relative;
   padding: 69px 0 0 105px;
   margin-right: -26px;
+  letter-spacing: 0.4px;
 }
 
 .image-text-section {
@@ -12244,9 +12243,17 @@ h2 {
   left: 128px;
 }
 
+.image-text-section .graph-line:before {
+  bottom: -31px;
+  left: -20px;
+  top: auto;
+  background: #fff;
+}
+
 .image-text-section .description {
   padding: 112px 0 0 90px;
-  margin: 0 -20px 0 0;
+  margin: 0 -27px 0 0;
+  letter-spacing: 0.4px;
 }
 
 .image-text-section .image {
@@ -12255,18 +12262,7 @@ h2 {
 
 .image-text-section .h1 {
   position: relative;
-}
-
-.image-text-section .h1:before {
-  position: absolute;
-  left: 0;
-  top: -100px;
-  content: '';
-  border-radius: 100%;
-  background: #fff;
-  width: 60px;
-  height: 60px;
-  z-index: 4;
+  margin: 0 0 12px;
 }
 
 .visual-area2 {

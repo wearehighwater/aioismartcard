@@ -208,13 +208,12 @@ a {
     }
 
     .graph-line {
-      top: 80px;
-      position: relative;
+      top: 92px;
 
       &:before {
         position: absolute;
-        left: 0;
-        top: 0;
+        left: -8px;
+        top: -29px;
         content: '';
         border-radius: 100%;
         background: #3254fe;
@@ -1322,22 +1321,11 @@ a {
   .description {
     position: relative;
     padding: 0 21px 32px 120px;
+    letter-spacing: 0.4px;
 
     .h1 {
       position: relative;
       margin-bottom: 20px;
-
-      &:before {
-        position: absolute;
-        left: -106px;
-        top: -10px;
-        content: '';
-        border-radius: 100%;
-        background: #3254fe;
-        width: 60px;
-        height: 60px;
-        z-index: 4;
-      }
     }
   }
 
@@ -1351,6 +1339,21 @@ a {
   .graph-line {
     top: -333px;
     left: 24px;
+
+    &:before {
+      top: auto;
+      bottom: -26px;
+    }
+
+    &.add {
+      top: -38px;
+
+      &:before {
+        left: auto;
+        right: -10px;
+        bottom: -39px;
+      }
+    }
   }
 }
 
@@ -1358,6 +1361,7 @@ a {
   position: relative;
   padding: 0 0 20px;
   text-align: center;
+  letter-spacing: 0.2px;
 
   .h1 {
     margin: 0 0 26px;
@@ -1427,30 +1431,25 @@ a {
   .h1 {
     position: relative;
     margin: 0 0 23px;
-
-    &:before {
-      position: absolute;
-      left: 50%;
-      top: -81px;
-      margin-left: -28px;
-      content: '';
-      border-radius: 100%;
-      background: #3254fe;
-      width: 60px;
-      height: 60px;
-      z-index: 1;
-    }
   }
 
   .graph-line {
     top: -304px;
     left: 101px;
+
+    &:before {
+      top: auto;
+      bottom: -20px;
+      left: auto;
+      right: -30px;
+    }
   }
 
   .description {
     position: relative;
     padding: 69px 0 0 105px;
     margin-right: -26px;
+    letter-spacing: 0.4px;
   }
 }
 
@@ -1462,11 +1461,19 @@ a {
   .graph-line {
     top: -314px;
     left: 128px;
+
+    &:before {
+      bottom: -31px;
+      left: -20px;
+      top: auto;
+      background: #fff;
+    }
   }
 
   .description {
     padding: 112px 0 0 90px;
-    margin: 0 -20px 0 0;
+    margin: 0 -27px 0 0;
+    letter-spacing: 0.4px;
   }
 
   .image {
@@ -1475,18 +1482,7 @@ a {
 
   .h1 {
       position: relative;
-
-      &:before {
-        position: absolute;
-        left: 0;
-        top: -100px;
-        content: '';
-        border-radius: 100%;
-        background: #fff;
-        width: 60px;
-        height: 60px;
-        z-index: 4;
-      }
+      margin: 0 0 12px;
     }
 }
 
