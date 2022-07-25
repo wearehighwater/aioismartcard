@@ -1859,6 +1859,8 @@ a {
   display: flex !important;
   flex-wrap: wrap !important;
   margin-left: -36px !important;
+  grid-row-gap: 0;
+  grid-column-gap: 0;
 
   .gfield {
     margin: 0 0 30px 36px;
@@ -1871,11 +1873,9 @@ a {
     width: 100%;
   }
 
-  .gfield_label {
-    font-size: 14px;
-    line-height: 20px;
-    display: block;
-    margin: 0 0 15px;
+  #field_1_11 {
+    margin-left: 36px;
+    margin-bottom: 30px;
   }
 
   #field_1_7,
@@ -1884,7 +1884,7 @@ a {
   }
 
   input[type=text] {
-    width: 100%;
+    width: 100% !important;
     height: 40px;
     background: #eaeff8;
     border-radius: 7px;
@@ -1892,9 +1892,9 @@ a {
     box-shadow: none;
     outline: none;
     color: $blue;
-    font-size: 14px;
-    line-height: 20px;
-    padding: 10px 19px;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    padding: 10px 19px !important;
   }
 }
 
@@ -1917,7 +1917,14 @@ a {
 }
 
 .gfield_label {
-  display: none;
+  display: none !important;
+}
+
+#field_1_11 .gfield_label {
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  margin: 0 0 15px;
 }
 
 .gfield_radio [type="radio"] {
