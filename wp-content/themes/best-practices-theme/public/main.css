@@ -10751,14 +10751,48 @@ h2 {
   padding-bottom: 176px;
 }
 
+@media (max-width: 991.99px) {
+  .visual-area.style01 .container {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+}
+
 .visual-area.style01 .image {
   position: relative;
   margin-left: -86px;
 }
 
+@media (max-width: 1440px) {
+  .visual-area.style01 .image {
+    margin: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .visual-area.style01 .image {
+    margin: 0 -15px;
+  }
+}
+
 .visual-area.style01 .image img {
   margin: 0;
   float: none;
+}
+
+@media (max-width: 1440px) {
+  .visual-area.style01 .image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .visual-area.style01 .image img {
+    margin: 0;
+    position: static;
+    width: 100%;
+  }
 }
 
 .visual-area.style01 .image a {
@@ -10769,6 +10803,13 @@ h2 {
   max-width: 510px;
   padding-bottom: 0;
   padding-top: 70px;
+}
+
+@media (max-width: 991.98px) {
+  .visual-area.style01 .description {
+    padding-top: 50px;
+    max-width: 100%;
+  }
 }
 
 .visual-area.style01 .graph-line {
@@ -10787,14 +10828,16 @@ h2 {
   z-index: 1;
 }
 
-.visual-area.style01 .btn-play {
-  width: 128px;
-  height: 128px;
-  margin-left: -13px;
-}
+@media (min-width: 768px) {
+  .visual-area.style01 .btn-play {
+    width: 128px;
+    height: 128px;
+    margin-left: -13px;
+  }
 
-.visual-area.style01 .btn-play:before {
-  border-width: 34px 0 34px 58px;
+  .visual-area.style01 .btn-play:before {
+    border-width: 34px 0 34px 58px;
+  }
 }
 
 .visual-area .container {
@@ -11013,8 +11056,26 @@ h2 {
   padding: 135px 0 101px;
 }
 
+@media (max-width: 1339px) {
+  .text-section.style01 {
+    padding: 70px 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .text-section.style01 {
+    padding: 40px 0;
+  }
+}
+
 .text-section.style01 .h1:before {
   top: -94px;
+}
+
+@media (max-width: 1339px) {
+  .text-section.style01 p {
+    padding: 0 12%;
+  }
 }
 
 .text-section p {
@@ -12096,10 +12157,22 @@ h2 {
   padding: 110px 0 375px;
 }
 
+@media (max-width: 991.98px) {
+  .features-area2 {
+    padding: 50px 0 80px;
+  }
+}
+
 .features-area2 .description {
   position: relative;
   padding: 0 21px 32px 120px;
   letter-spacing: 0.4px;
+}
+
+@media (max-width: 991.98px) {
+  .features-area2 .description {
+    padding: 30px 0 0;
+  }
 }
 
 .features-area2 .description .h1 {
@@ -12107,9 +12180,34 @@ h2 {
   margin-bottom: 20px;
 }
 
+@media (max-width: 991.98px) {
+  .features-area2 .col-lg-7 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .features-area2 .col-lg-5 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
 .features-area2 .image img {
   float: left;
   margin-left: 17px;
+}
+
+@media (max-width: 991.98px) {
+  .features-area2 .image img {
+    float: none;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+  }
 }
 
 .features-area2 .graph-line {
@@ -12185,6 +12283,18 @@ h2 {
   padding: 227px 0 218px;
 }
 
+@media (max-width: 1359px) {
+  .info-section2 {
+    padding: 120px 0 50px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .info-section2 {
+    padding: 60px 0 30px;
+  }
+}
+
 .info-section2 .image {
   max-width: 550px;
   position: relative;
@@ -12232,6 +12342,18 @@ h2 {
   letter-spacing: 0.4px;
 }
 
+@media (max-width: 1359px) {
+  .info-section2 .description {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .info-section2 .description {
+    padding: 30px 0 0;
+  }
+}
+
 .image-text-section {
   position: relative;
   background: #2c49dc;
@@ -12250,14 +12372,46 @@ h2 {
   background: #fff;
 }
 
+.image-text-section .col-lg-6 {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.image-text-section .col-lg-6:first-child {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
 .image-text-section .description {
   padding: 112px 0 0 90px;
   margin: 0 -27px 0 0;
   letter-spacing: 0.4px;
 }
 
+@media (max-width: 991.98px) {
+  .image-text-section .description {
+    margin: 0;
+    padding: 40px 0 30px;
+  }
+}
+
 .image-text-section .image {
   margin: 0 0 0 22px;
+}
+
+@media (max-width: 991.98px) {
+  .image-text-section .image {
+    margin: 0 -60px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .image-text-section .image img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .image-text-section .h1 {
@@ -12287,6 +12441,12 @@ h2 {
   padding: 137px 0 0 118px;
   position: relative;
   max-width: 492px;
+}
+
+@media (max-width: 1440px) {
+  .visual-area2 .description {
+    padding-left: 70px;
+  }
 }
 
 @media (max-width: 1365px) {
