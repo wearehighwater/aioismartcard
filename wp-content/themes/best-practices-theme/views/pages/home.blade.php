@@ -10,7 +10,7 @@
 					<div class="description">
 						<h1 class="animated-circle-blue"><span class="d-block">{!!get_field('visual_head')!!}</span> {!!get_field('visual_subhead')!!}</h1>
 						<div class="graph-line">
-							<img src="{{public_path('images/home-bg-line1.svg')}}" alt="image-description">
+							<img src="{{public_path('images/home-bg-line1.svg')}}" alt="image-description" width="694" height="643">
 						</div>
 					</div>
 				</div>
@@ -36,11 +36,11 @@
 		<div class="container">
 			<div class="holder">
 				<div class="graph-line">
-					<img src="{{public_path('images/home-bg-line2.svg')}}" alt="image-description">
+					<img src="{{public_path('images/home-bg-line2.svg')}}" alt="image-description" width="688" height="357">
 				</div>
 				<h2 class="h1 animated-circle-blue">{!!get_field('home_section_2_head')!!}</h2>
 				<div class="graph-line style01">
-					<img src="{{public_path('images/home-bg-line3.svg')}}" alt="image-description">
+					<img src="{{public_path('images/home-bg-line3.svg')}}" alt="image-description" width="996" height="814">
 				</div>
 				<div class="col-holder">
 					@foreach(get_field('home_section_2_content') as $section2)
@@ -84,7 +84,7 @@
 			<div class="holder">
 				<div class="head">
 					<div class="graph-line">
-						<img src="{{public_path('images/home-bg-line4.svg')}}" alt="image-description">
+						<img src="{{public_path('images/home-bg-line4.svg')}}" width="305" height="322" alt="image-description">
 					</div>
 					<h2 class="h1 animated-circle-blue">Designed for Many Economic and Industrial Environments</h2>
 					<p>The ability of Smart Card to display different types of information <br>enables the device to operate in multiple commercial settings.</p>
@@ -143,7 +143,7 @@
 					<div class="column column-head">
 						<div class="column-wrap">
 							<div class="graph-line">
-								<img src="{{public_path('images/home-bg-line5.svg')}}" alt="image-description">
+								<img src="{{public_path('images/home-bg-line5.svg')}}" width="514" height="353" alt="image-description">
 							</div>
 							<div class="head">
 								<h2 class="h1 animated-circle-white">Visible RFID Smart Card Specifications</h2>
@@ -226,10 +226,10 @@
 				<div class="col-lg-7">
 					<div class="description">
 						<div class="graph-line">
-							<img src="{{public_path('images/home-bg-line6.svg')}}" alt="image-description">
+							<img src="{{public_path('images/home-bg-line6.svg')}}" width="691" height="434" alt="image-description">
 						</div>
 						<div class="graph-line add">
-							<img src="{{public_path('images/home-bg-line7.svg')}}" alt="image-description">
+							<img src="{{public_path('images/home-bg-line7.svg')}}" width="685" height="660" alt="image-description">
 						</div>
 						<h2 class="h1 animated-circle-blue">Featured Case Studies</h2>
 						<p>OMRON ASO, a product manufacturer in Japan, sought a paperless way to optimize parts traceability and product management on all levels. Watch how Smart Card seamlessly replaced instructions, paper Kanban, and tags to transform the manufacturing process at OMRON for the better.</p>
@@ -265,10 +265,10 @@
 				<div class="col-lg-6">
 					<div class="description">
 						<div class="graph-line">
-							<img src="{{public_path('images/home-bg-line8.svg')}}" alt="image-description">
+							<img src="{{public_path('images/home-bg-line8.svg')}}" width="689" height="404" alt="image-description">
 						</div>
 						<div class="graph-line add">
-							<img src="{{public_path('images/home-bg-line9.svg')}}" alt="image-description">
+							<img src="{{public_path('images/home-bg-line9.svg')}}" width="86" height="715" alt="image-description">
 						</div>
 						<h2 class="h1 animated-circle-blue">Try Smart Card from Your Mobile Device</h2>
 						<p>Don’t feel pressured into purchasing our product before testing it out. Download our free demo apps and witness first-hand what Smart Card has to offer.</p>
