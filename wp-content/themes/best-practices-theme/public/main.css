@@ -11847,24 +11847,6 @@ h2 {
   }
 }
 
-.about-area:before {
-  position: absolute;
-  right: -900px;
-  top: -900px;
-  content: '';
-  width: 1758px;
-  height: 1758px;
-  content: '';
-  background: #e4edfa;
-  border-radius: 100%;
-}
-
-@media (max-width: 1199px) {
-  .about-area:before {
-    display: none;
-  }
-}
-
 @media (max-width: 991.98px) {
   .about-area .col-lg-5 {
     -webkit-box-ordinal-group: 2;
@@ -11889,6 +11871,18 @@ h2 {
 
 .about-area .pulsating-circle.add {
   left: 65px;
+}
+
+.about-area .pulsating-circle.big-circle {
+  top: 300;
+  bottom: auto;
+  left: auto;
+  right: 190px;
+}
+
+.about-area .pulsating-circle.big-circle .circle {
+  width: 800px;
+  height: 800px;
 }
 
 .about-area .description {
@@ -12849,7 +12843,7 @@ h2 {
 
 .gfield_radio .gchoice {
   width: 50%;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .gform_fields {

@@ -1115,22 +1115,6 @@ a {
     padding: 60px 0 50px;
   }
 
-  &:before {
-    position: absolute;
-    right: -900px;
-    top: -900px;
-    content: '';
-    width: 1758px;
-    height: 1758px;
-    content: '';
-    background: #e4edfa;
-    border-radius: 100%;
-
-    @media (max-width: 1199px) {
-      display: none;
-    }
-  }
-
   .col-lg-5 {
     @include media-breakpoint-down(md) {
       order: 1;
@@ -1150,6 +1134,18 @@ a {
 
     &.add {
       left: 65px;
+    }
+
+    &.big-circle {
+        top: 300;
+        bottom: auto;
+        left: auto;
+        right: 190px;
+
+        .circle {
+          width: 800px;
+          height: 800px;
+        }
     }
   }
 
@@ -1962,7 +1958,7 @@ a {
 
   .gchoice {
     width: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }              
 }
 
