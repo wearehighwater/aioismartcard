@@ -86,52 +86,32 @@
 					<div class="graph-line">
 						<img src="{{public_path('images/home-bg-line4.svg')}}" width="305" height="322" alt="image-description">
 					</div>
-					<h2 class="h1 animated-circle-blue">Designed for Many Economic and Industrial Environments</h2>
-					<p>The ability of Smart Card to display different types of information <br>enables the device to operate in multiple commercial settings.</p>
+					<h2 class="h1 animated-circle-blue">{!!get_field('home_section_4_head')!!}</h2>
+					<p>{!!get_field('home_section_4_subhead')!!}</p>
 				</div>
 				<div class="topics-blocks">
+					@foreach(get_field('home_section_4_product') as $section4)
 					<div class="topic-block">
 						<div class="ico-holder">
-							<img src="{{public_path('images/icon1.svg')}}" alt="image-description" width="58" height="58">
+							<img src="{{$section4['home_section_4_product_icon']}}" alt="Icon-{{$loop->iteration}}" 
+							@if($loop->iteration == 1) 
+							width="58" height="58"
+							@elseif($loop->iteration == 2)
+							width="55" height="56"
+							@elseif($loop->iteration == 3)
+							width="54" height="54"
+							@elseif($loop->iteration == 4)
+							width="56" height="56"
+							@elseif($loop->iteration == 5)
+							width="56" height="56"
+							@else
+							width="55" height="55"
+							@endif>
 						</div>
-						<h2>Manufacturing</h2>
-						<p>Factories can distribute paperless, real-time production orders to their workers, eliminating handwriting errors, reducing waste, and improving operational efficiency.</p>
+						<h2>{{$section4['home_section_4_product_title']}}</h2>
+						<p>{{$section4['home_section_4_product_description']}}</p>
 					</div>
-					<div class="topic-block">
-						<div class="ico-holder">
-							<img src="{{public_path('images/icon2.svg')}}" alt="image-description" width="55" height="56">
-						</div>
-						<h2>Distribution</h2>
-						<p>Compatible with our Pick-to-Light systems, Smart Card makes it easier for warehouse staff to navigate the transfer of inventory from one point to another.</p>
-					</div>
-					<div class="topic-block">
-						<div class="ico-holder">
-							<img src="{{public_path('images/icon3.svg')}}" alt="image-description" width="54" height="54">
-						</div>
-						<h2>Food Service</h2>
-						<p>Restaurants use our RFID tags to quickly process billing information and receive payment from their customers at greater speeds.</p>
-					</div>
-					<div class="topic-block">
-						<div class="ico-holder">
-							<img src="{{public_path('images/icon4.svg')}}" alt="image-description" width="56" height="56">
-						</div>
-						<h2>Health Care</h2>
-						<p>Smart Card allows medical personnel to safely handle patient information and equipment to decrease the risks of leaking personal information.</p>
-					</div>
-					<div class="topic-block">
-						<div class="ico-holder">
-							<img src="{{public_path('images/icon5.svg')}}" alt="image-description" width="56" height="56">
-						</div>
-						<h2>Maintenance</h2>
-						<p>Facilities install Smart Cards on their walls to log the work history of cleaning staff with an accuracy nearly impossible to duplicate with paper.</p>
-					</div>
-					<div class="topic-block">
-						<div class="ico-holder">
-							<img src="{{public_path('images/icon6.svg')}}" alt="image-description" width="55" height="55">
-						</div>
-						<h2>Businesses/Organizations</h2>
-						<p>Smart Card excels as a reception system that records the personal information of visitors, grants them access to the building, and erases their information afterwards</p>
-					</div>
+					@endforeach
 				</div>
 			</div>
 		</div>
