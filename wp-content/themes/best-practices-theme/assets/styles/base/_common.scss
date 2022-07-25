@@ -1966,8 +1966,8 @@ a {
   display: flex !important;
   flex-wrap: wrap !important;
   margin-left: -36px !important;
-  grid-row-gap: 0;
-  grid-column-gap: 0;
+  grid-row-gap: 0 !important;
+  grid-column-gap: 0 !important;
 
   .gfield {
     margin: 0 0 30px 36px;
