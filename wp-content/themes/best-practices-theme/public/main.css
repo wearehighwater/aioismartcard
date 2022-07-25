@@ -11659,13 +11659,13 @@ h2 {
   margin-right: 28px;
 }
 
-.specifications-area {
-  padding-bottom: 102px;
-  position: relative;
-}
-
 .specifications-area .h1:before {
   display: none;
+}
+
+.specifications-area.style02 {
+  padding-bottom: 102px;
+  position: relative;
 }
 
 .specifications-area.style02:after {

@@ -1060,8 +1060,6 @@ a {
 }
 
 .specifications-area {
-  padding-bottom: 102px;
-  position: relative;
 
   .h1 {
     &:before {
@@ -1070,6 +1068,9 @@ a {
   }
 
   &.style02 {
+    padding-bottom: 102px;
+    position: relative;
+
     &:after {
       position: absolute;
       left: 50%;
