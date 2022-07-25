@@ -10660,6 +10660,14 @@ h1 {
   }*/
 }
 
+@media (max-width: 1199.99px) {
+  .h1,
+  h1 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+
 @media (max-width: 991.98px) {
   .h1,
   h1 {
@@ -12266,26 +12274,40 @@ h2 {
   padding: 63px 0 461px;
 }
 
+@media (max-width: 1365px) {
+  .visual-area2 {
+    padding-bottom: 110px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .visual-area2 {
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
+}
+
 .visual-area2 .description {
   padding: 137px 0 0 118px;
   position: relative;
   max-width: 492px;
 }
 
-.visual-area2 h1 {
-  position: relative;
+@media (max-width: 1365px) {
+  .visual-area2 .description {
+    padding-left: 50px;
+  }
 }
 
-.visual-area2 h1:before {
-  position: absolute;
-  left: -106px;
-  top: -11px;
-  content: '';
-  border-radius: 100%;
-  background: #3254fe;
-  width: 60px;
-  height: 60px;
-  z-index: 4;
+@media (max-width: 991.98px) {
+  .visual-area2 .description {
+    max-width: 100%;
+    padding: 30px 0 0;
+  }
+}
+
+.visual-area2 h1 {
+  position: relative;
 }
 
 .visual-area2 .graph-line {
@@ -12293,9 +12315,41 @@ h2 {
   left: 22px;
 }
 
+@media (max-width: 991.98px) {
+  .visual-area2 .col-lg-7 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .visual-area2 .col-lg-5 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
 .visual-area2 .image img {
   float: right;
   margin-right: 28px;
+}
+
+@media (max-width: 1439px) {
+  .visual-area2 .image img {
+    float: none;
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .visual-area2 .image img {
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 .specifications-area .h1:before {
@@ -12307,19 +12361,6 @@ h2 {
   position: relative;
 }
 
-.specifications-area.style02:after {
-  position: absolute;
-  left: 50%;
-  top: -83px;
-  margin-left: -30px;
-  content: '';
-  border-radius: 100%;
-  background: #3254fe;
-  width: 60px;
-  height: 60px;
-  z-index: 4;
-}
-
 .specifications-area.style02:before {
   top: -490px;
   width: 680px;
@@ -12329,6 +12370,16 @@ h2 {
 .products-area {
   background: #2c49dc;
   padding: 84px 0 96px;
+}
+
+@media (max-width: 991.98px) {
+  .products-area {
+    padding: 50px 0 25px;
+  }
+}
+
+.products-area .container {
+  position: relative;
 }
 
 .products-area .holder {
@@ -12344,6 +12395,19 @@ h2 {
       flex-wrap: wrap;
 }
 
+@media (max-width: 991.98px) {
+  .products-area .holder {
+    padding: 55px 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .products-area .holder {
+    display: block;
+    padding: 30px 15px;
+  }
+}
+
 .products-area .form-section {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -12353,9 +12417,32 @@ h2 {
   padding: 0 0 0 30px;
 }
 
+@media (max-width: 991.98px) {
+  .products-area .form-section {
+    padding: 0;
+  }
+}
+
+.products-area .graph-line {
+  left: 50%;
+  top: -140px;
+}
+
+.products-area .graph-line:before {
+  top: auto;
+  bottom: -15px;
+  left: -25px;
+}
+
 .prod-info {
   width: 305px;
   position: relative;
+}
+
+@media (max-width: 991.98px) {
+  .prod-info {
+    width: 290px;
+  }
 }
 
 .prod-info:before {
@@ -12366,6 +12453,12 @@ h2 {
   content: '';
   width: 2px;
   background: #dce2ea;
+}
+
+@media (max-width: 991.98px) {
+  .prod-info:before {
+    display: none;
+  }
 }
 
 .prod-info h2 {
@@ -12430,6 +12523,12 @@ h2 {
   margin-right: 9px;
 }
 
+@media (max-width: 991.98px) {
+  .prod-info .prod-card-info .text {
+    margin: 0;
+  }
+}
+
 .prod-info .smart-card {
   margin-top: 38px;
 }
@@ -12473,6 +12572,12 @@ h2 {
   letter-spacing: 0.6px;
 }
 
+@media (max-width: 991.98px) {
+  .prod-info .prod-summary {
+    padding-right: 10px;
+  }
+}
+
 .prod-info .prod-summary li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12497,6 +12602,17 @@ h2 {
   font-size: 16px;
   line-height: 23px;
   padding-right: 54px;
+}
+
+@media (max-width: 991.98px) {
+  .form-section p {
+    padding-right: 0;
+  }
+}
+
+.form-section .form-holder img {
+  max-width: 100%;
+  height: auto;
 }
 
 .content-area {
