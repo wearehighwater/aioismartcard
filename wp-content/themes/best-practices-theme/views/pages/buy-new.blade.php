@@ -11,6 +11,18 @@
                                 <p>Start saving time and money today by completing this purchase form.</p>
                                 <div class="graph-line">
                                     <img src="{{public_path('images/buy-bg-line1.svg')}}" width="693" height="643px" alt="image-description">
+                                    <div class="pulsating-circle">
+                                        <div class="circle" style="animation-delay: -3s"></div>
+                                        <div class="circle" style="animation-delay: -2s"></div>
+                                        <div class="circle" style="animation-delay: -1s"></div>
+                                        <div class="circle" style="animation-delay: 0s"></div>
+                                    </div>
+                                    <div class="pulsating-circle add">
+                                        <div class="circle" style="animation-delay: -3s"></div>
+                                        <div class="circle" style="animation-delay: -2s"></div>
+                                        <div class="circle" style="animation-delay: -1s"></div>
+                                        <div class="circle" style="animation-delay: 0s"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -24,6 +36,12 @@
             </section>
             <section class="specifications-area style02">
                 <div class="container">
+                    <div class="pulsating-circle big-circle add">
+                        <div class="circle" style="animation-delay: -3s"></div>
+                        <div class="circle" style="animation-delay: -2s"></div>
+                        <div class="circle" style="animation-delay: -1s"></div>
+                        <div class="circle" style="animation-delay: 0s"></div>
+                    </div>
             <div class="specifications-table">
                 <div class="column-holder">
                     <div class="column column-head">
@@ -74,9 +92,21 @@
         </div>
             </section>
             <section class="products-area">
+                <div class="pulsating-circle bg-white big-circle">
+                    <div class="circle" style="animation-delay: -3s"></div>
+                    <div class="circle" style="animation-delay: -2s"></div>
+                    <div class="circle" style="animation-delay: -1s"></div>
+                    <div class="circle" style="animation-delay: 0s"></div>
+                </div>
                 <div class="container">
                     <div class="graph-line">
                         <img src="{{public_path('images/buy-bg-line2.svg')}}" height="209" width="9" alt="image-description">
+                        <div class="pulsating-circle">
+                            <div class="circle" style="animation-delay: -3s"></div>
+                            <div class="circle" style="animation-delay: -2s"></div>
+                            <div class="circle" style="animation-delay: -1s"></div>
+                            <div class="circle" style="animation-delay: 0s"></div>
+                        </div>
                     </div>
                     <div class="holder">
                         <div class="prod-info">

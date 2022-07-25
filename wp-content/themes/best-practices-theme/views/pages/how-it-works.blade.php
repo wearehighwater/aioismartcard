@@ -10,6 +10,18 @@
                         <p>Smart Card enables users to easily read, write, and overwrite various types of displayed information.</p>
                         <div class="graph-line">
                             <img src="{{public_path('images/how-bg-line1.svg')}}" width="694" height="575" alt="image-description">
+                            <div class="pulsating-circle">
+                                <div class="circle" style="animation-delay: -3s"></div>
+                                <div class="circle" style="animation-delay: -2s"></div>
+                                <div class="circle" style="animation-delay: -1s"></div>
+                                <div class="circle" style="animation-delay: 0s"></div>
+                            </div>
+                            <div class="pulsating-circle bg-white add">
+                                <div class="circle" style="animation-delay: -3s"></div>
+                                <div class="circle" style="animation-delay: -2s"></div>
+                                <div class="circle" style="animation-delay: -1s"></div>
+                                <div class="circle" style="animation-delay: 0s"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -41,9 +53,21 @@
                     <div class="description">
                         <div class="graph-line">
                             <img src="{{public_path('images/how-bg-line2.svg')}}" width="688" height="357" alt="image-description">
+                            <div class="pulsating-circle">
+                                <div class="circle" style="animation-delay: -3s"></div>
+                                <div class="circle" style="animation-delay: -2s"></div>
+                                <div class="circle" style="animation-delay: -1s"></div>
+                                <div class="circle" style="animation-delay: 0s"></div>
+                            </div>
                         </div>
-                        <div class="graph-line">
+                        <div class="graph-line add">
                             <img src="{{public_path('images/how-bg-line3.svg')}}" width="703" height="692" alt="image-description">
+                            <div class="pulsating-circle add">
+                                <div class="circle" style="animation-delay: -3s"></div>
+                                <div class="circle" style="animation-delay: -2s"></div>
+                                <div class="circle" style="animation-delay: -1s"></div>
+                                <div class="circle" style="animation-delay: 0s"></div>
+                            </div>
                         </div>
                         <h2 class="h1">Dustproof and Waterproof</h2>
                         <p>Smart Card has earned an Ingress Protection rating of IP56, which means the device allows the entry of little dust and almost no water, contributing to its longevity.</p>
@@ -82,6 +106,12 @@
                     <div class="description">
                         <div class="graph-line">
                             <img src="{{public_path('images/how-bg-line4.svg')}}" width="375" height="322" alt="image-description">
+                            <div class="pulsating-circle">
+                                <div class="circle" style="animation-delay: -3s"></div>
+                                <div class="circle" style="animation-delay: -2s"></div>
+                                <div class="circle" style="animation-delay: -1s"></div>
+                                <div class="circle" style="animation-delay: 0s"></div>
+                            </div>
                         </div>
                         <h2 class="h1">Almost No Electricity Required</h2>
                         <p>Electricity is only necessary for overwriting information. When Smart Cards are simply displaying data – as they are for a majority of their use – no electricity is required.</p>
@@ -97,6 +127,12 @@
                     <div class="description">
                         <div class="graph-line">
                             <img src="{{public_path('images/how-bg-line5.svg')}}" width="968" height="353" alt="image-description">
+                            <div class="pulsating-circle bg-white">
+                                <div class="circle" style="animation-delay: -3s"></div>
+                                <div class="circle" style="animation-delay: -2s"></div>
+                                <div class="circle" style="animation-delay: -1s"></div>
+                                <div class="circle" style="animation-delay: 0s"></div>
+                            </div>
                         </div>
                         <h2 class="h1">Immediate Integration</h2>
                         <p>The barcodes reproduced on a Smart Card display are legible to nearly all terminals, allowing them to be instantly incorporated into existing systems.</p>
