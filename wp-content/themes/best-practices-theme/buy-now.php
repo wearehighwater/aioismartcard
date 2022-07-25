@@ -5,4 +5,4 @@
  *
  * Template Name: Buy Now
  */
-bladerunner('views.pages.buy-now');
+bladerunner('views.pages.buy-new');
