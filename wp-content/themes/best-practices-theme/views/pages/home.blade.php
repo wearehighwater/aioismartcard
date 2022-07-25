@@ -126,23 +126,12 @@
 								<img src="{{public_path('images/home-bg-line5.svg')}}" width="514" height="353" alt="image-description">
 							</div>
 							<div class="head">
-								<h2 class="h1 animated-circle-white">Visible RFID Smart Card Specifications</h2>
+								<h2 class="h1 animated-circle-white">{{get_field('product_table_head','options')}}</h2>
 							</div>
 							<div class="data-holder">
-								<span class="data-title span1">Model</span>
-								<span class="data-title span2">Display</span>
-								<span class="data-title span3">Display Area</span>
-								<span class="data-title span4">Resolution</span>
-								<span class="data-title span5">Electric Power</span>
-								<span class="data-title span6">User Memory</span>
-								<span class="data-title span7">Communication (NFC)</span>
-								<span class="data-title span8">Communication (UHF)</span>
-								<span class="data-title span9">UHF Communication Distance</span>
-								<span class="data-title span10">Writable times</span>
-								<span class="data-title span11">Operating Temperature/Humidity</span>
-								<span class="data-title span12">Dustproof/Waterproof level</span>
-								<span class="data-title span13">External Dimensions</span>
-								<span class="data-title span14">Net Weight</span>
+								@foreach(get_field('product_detail','options') as $product_head)
+								<span class="data-title span{{$loop->iteration}}">{{$product_head['product_desc_head']}}</span>
+								@endforeach
 							</div>
 						</div>
 					</div>
@@ -150,24 +139,13 @@
 						<div class="column-wrap">
 							<div class="head">
 								<div class="image">
-									<img src="{{public_path('images/image3.png')}}" alt="image-description">
+									<img src="{{get_field('product_table_image_1','options')}}" alt="Product 1">
 								</div>
 							</div>
 							<div class="data-holder">
-								<span class="data-description span1" data-title="Model">SC1029L</span>
-								<span class="data-description span2" data-title="Display">ePaper (2.9 inch diagonal)</span>
-								<span class="data-description span3" data-title="Display Area">61.5mm x 41.0mm</span>
-								<span class="data-description span4" data-title="Resolution">300 x 200 pixels</span>
-								<span class="data-description span5" data-title="Electric Power">Wireless Charging (Battery not required)</span>
-								<span class="data-description span6" data-title="User Memory">16KB </span>
-								<span class="data-description span7" data-title="Communication (NFC)">ISO/IEC 18092, JISX6319-4 compliant </span>
-								<span class="data-description span8" data-title="Communication (UHF)">—</span>
-								<span class="data-description span9" data-title="UHF Communication Distance" >—</span>
-								<span class="data-description span10" data-title="Writable times">More than 1 million times</span>
-								<span class="data-description span11" data-title="Operating Temperature/Humidity">0°C to 50°C / 0% to 80% (Non condensing)</span>
-								<span class="data-description span12" data-title="Dustproof/Waterproof level">IP56</span>
-								<span class="data-description span13" data-title="External Dimensions">85.6mm x 54.0mm x 3.65mm</span>
-								<span class="data-description span14" data-title="Net Weight">20g</span>
+								@foreach(get_field('product_detail','options') as $product_desc)
+								<span class="data-description span{{$loop->iteration}}" data-title="{{$product_desc['product_desc_head']}}">{{$product_desc['product_desc_content']}}</span>
+								@endforeach
 							</div>
 						</div>
 					</div>
@@ -175,24 +153,13 @@
 						<div class="column-wrap">
 							<div class="head">
 								<div class="image">
-									<img src="{{public_path('images/image4.png')}}" alt="image-description">
+									<img src="{{get_field('product_table_image_2','options')}}" alt="Product 2">
 								</div>
 							</div>
 							<div class="data-holder">
-								<span class="data-description span1" data-title="Model">SC1029U</span>
-								<span class="data-description span2" data-title="Display">ePaper (2.9 inch diagonal)</span>
-								<span class="data-description span3" data-title="Display Area">61.5mm x 41.0mm</span>
-								<span class="data-description span4" data-title="Resolution">300 x 200 pixels</span>
-								<span class="data-description span5" data-title="Electric Power">Wireless Charging (Battery not required)</span>
-								<span class="data-description span6" data-title="User Memory">16KB </span>
-								<span class="data-description span7" data-title="Communication (NFC)">ISO/IEC 18092, JISX6319-4 compliant </span>
-								<span class="data-description span8" data-title="Communication (UHF)">ISO/IEC 18000-63, (EPC Global Class 1) </span>
-								<span class="data-description span9" data-title="UHF Communication Distance">Maximum Reading Distance: About 3m </span>
-								<span class="data-description span10" data-title="Writable times">More than 1 million times</span>
-								<span class="data-description span11" data-title="Operating Temperature/Humidity">0°C to 50°C / 0% to 80% (Non condensing)</span>
-								<span class="data-description span12" data-title="Dustproof/Waterproof level">IP56</span>
-								<span class="data-description span13" data-title="External Dimensions">95.2mm x 60.9mm x 3.95mm</span>
-								<span class="data-description span14" data-title="Net Weight">30g</span>
+								@foreach(get_field('product_detail','options') as $product_desc2)
+								<span class="data-description span{{$loop->iteration}}" data-title="{{$product_desc2['product_desc_head']}}">{{$product_desc2['product_desc_content_2']}}</span>
+								@endforeach
 							</div>
 						</div>
 					</div>
