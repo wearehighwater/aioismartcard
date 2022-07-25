@@ -15,6 +15,10 @@
     display: block;
   }
 
+  @media (max-width: 359.98px) {
+    top: 20px;
+  }
+
   .menu-active & {
     border-top: 0;
   }

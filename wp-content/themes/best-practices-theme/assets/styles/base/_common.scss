@@ -377,21 +377,18 @@ a {
     }
   }
 
-  .graph-line {
-    &:after {
-      position: absolute;
-      left: auto;
-      right: -20px;
+  .pulsating-circle {
+    &.add {
       top: auto;
-      bottom: -30px;
-      content: '';
-      border-radius: 100%;
-      background: #fff;
-      width: 60px;
-      height: 60px;
-      z-index: 1;
-      margin-left: -30px;
+      right: 30px;
+      bottom: 20px;
+      left: auto;
     }
+  }
+
+  .pulsating-circle {
+    top: -10px;
+    left: 0;
   }
 }
 
@@ -462,6 +459,10 @@ a {
       @media (max-width: 1339px) {
         padding: 0 12%;
       }
+
+      @media (max-width: 479px) {
+        padding: 0 4%;
+      }
     }
   }
 
@@ -504,25 +505,14 @@ a {
 
     &.style01 {
       top: 23px;
-
-      &:before {
-        right: -10px;
-        left: auto;
-        top: auto;
-        bottom: -44px;
-      }
     }
+  }
 
-    &:before {
-      position: absolute;
-      left: -10px;
-      top: 347px;
-      content: '';
-      border-radius: 100%;
-      background: #3254fe;
-      width: 60px;
-      height: 60px;
-      z-index: 1;
+  .pulsating-circle {
+    &.add {
+      left: auto;
+      right: 40px;
+      bottom: 20px;
     }
   }
 
@@ -652,18 +642,6 @@ a {
     img {
       @include img-style;
     }
-
-    &:before {
-      position: absolute;
-      right: 188px;
-      top: -277px;
-      width: 886px;
-      height: 886px;
-      border-radius: 100%;
-      content: '';
-      background: #e4edfa;
-      z-index: -1;
-    }
   }
 }
 
@@ -729,20 +707,11 @@ a {
   .graph-line {
     left: 50.6%;
     top: -395px;
+  }
 
-    &:before {
-      position: absolute;
-      left: -5px;
-      top: auto;
-      bottom: -15px;
-      margin-left: -22px;
-      content: '';
-      border-radius: 100%;
-      background: #3254fe;
-      width: 60px;
-      height: 60px;
-      z-index: 1;
-    }
+  .pulsating-circle {
+    bottom: 20px;
+    left: -17px;
   }
 }
 
@@ -830,18 +799,21 @@ a {
   .graph-line {
     top: -307px;
     left: 54px;
+  }
 
-    &:before {
-      position: absolute;
-      left: -20px;
-      top: auto;
-      bottom: -30px;
-      content: '';
-      border-radius: 100%;
-      background: #fff;
-      width: 60px;
-      height: 60px;
-      z-index: 1;
+  .pulsating-circle {
+    bottom: 20px;
+    left: -10px;
+
+    &.big-circle {
+      left: auto;
+      right: -230px;
+      bottom: -280px;
+
+      .circle {
+        width: 300px;
+        height: 300px;
+      }
     }
   }
 
@@ -1039,28 +1011,18 @@ a {
     top: -387px;
     left: -97px;
 
-    &:before {
-      position: absolute;
-      left: -8px;
-      top: auto;
-      bottom: -30px;
-      content: '';
-      border-radius: 100%;
-      background: #3254fe;
-      width: 60px;
-      height: 60px;
-      z-index: 1;
-    }
-
     &.add {
       top: 49px;
+    }
+  }
 
-      &:before {
-        background: #fff;
-        left: auto;
-        right: -27px;
-        bottom: -30px;
-      }
+  .pulsating-circle {
+    left: 2px;
+    bottom: 20px;
+
+    &.add {
+      left: auto;
+      right: 20px;
     }
   }
 
@@ -1167,6 +1129,16 @@ a {
     }
   }
 
+  .pulsating-circle {
+    z-index: 5;
+    left: -7px;
+    bottom: 10px;
+
+    &.add {
+      left: 65px;
+    }
+  }
+
   .description {
     max-width: 488px;
     margin: 0 auto;
@@ -1191,29 +1163,10 @@ a {
       top: -387px;
       left: -67px;
 
-      &:before {
-        position: absolute;
-        left: -15px;
-        top: auto;
-        bottom: -30px;
-        content: '';
-        border-radius: 100%;
-        background: #3254fe;
-        width: 60px;
-        height: 60px;
-        z-index: 4;
-      }
-
       &.add {
         top: 21px;
         left: -56px;
         z-index: 3;
-
-        &:before {
-          background: #fff;
-          left: 56px;
-          bottom: -25px;
-        }
       }
     }
 
@@ -1904,6 +1857,10 @@ a {
 .content-area {
   padding: 88px 0 167px;
 
+  @include media-breakpoint-down(md) {
+    padding: 50px 0;
+  }
+
   .container {
     max-width: 1050px;
   }
@@ -1926,10 +1883,18 @@ a {
 
   .holder {
     padding: 0 89px;
+
+    @include media-breakpoint-down(md) {
+      padding: 0 0 30px;
+    }
   }
 
   p {
     margin: 0 0 60px;
+
+    @include media-breakpoint-down(md) {
+      margin: 0 0 30px;
+    }
   }
 
   .image-row {
@@ -1940,6 +1905,11 @@ a {
     .image {
       padding: 0 14px;
       width: 33.333%;
+
+      @include media-breakpoint-down(sm) {
+        width: 50%;
+        margin-bottom: 30px;
+      }
 
       img {
         width: 100%;
@@ -2069,4 +2039,79 @@ a {
 }
 .gfield_radio [type="radio"]:checked + label:before {
   background: $blue;
+}
+
+
+
+
+.pulsating-circle {
+  position: absolute;
+  z-index: 3;
+
+  &:before {
+    position: absolute;
+    left: 20px;
+    border-radius: 50%;
+    z-index: 5;
+    top: 20px;
+    transform: translate(-50% , -50%);
+    content: '';
+    background-color: $light-blue;
+    width: 20px;
+    height: 20px;
+  }
+
+  &.bg-white {
+    &:before {
+      background-color: $white
+    }
+    .circle {
+      background-color: $white;
+    }
+  }
+
+  &.big-circle {
+      z-index: -1;
+
+    &:before {
+      display: none;
+    }
+    .circle {
+      background-color: #c1d6fb;
+      width: 400px;
+      height: 400px;
+      top: -450px;
+      left: -220px;
+    }
+  }
+}
+
+.circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: $light-blue;
+  position: absolute;
+  opacity: 0;
+  animation: scaleIn 4s infinite cubic-bezier(.36,.11,.89, .32);
+  z-index: 4;
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(.5 , .5);
+    opacity: 0.5;
+  }
+
+  to {
+    transform: scale(2.5 , 2.5);
+    opacity: 0;
+  }
+} 
+
+.graph-line {
+  &:before,
+  &:after {
+    display: none !important;
+  }
 }
