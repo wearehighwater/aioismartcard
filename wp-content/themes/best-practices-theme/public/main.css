@@ -12855,8 +12855,8 @@ h2 {
   -ms-flex-wrap: wrap !important;
       flex-wrap: wrap !important;
   margin-left: -36px !important;
-  grid-row-gap: 0;
-  grid-column-gap: 0;
+  grid-row-gap: 0 !important;
+  grid-column-gap: 0 !important;
 }
 
 .gform_fields .gfield {
