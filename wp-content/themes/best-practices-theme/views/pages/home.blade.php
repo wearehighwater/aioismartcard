@@ -238,11 +238,11 @@
 			</div>
 			<div class="faq-area">
 				<div class="text-area">
-					<h2 class="h1 animated-circle-white">You Have Questions. <br>We Have Answers.</h2>
-					<p>Please fill out the following contact form. A member of our team will review your request and reach out to you shortly.</p>
+					<h2 class="h1 animated-circle-white">{!!get_field('form_section_head')!!}</h2>
+					<p>{!!get_field('form_section_content')!!}</p>
 				</div>
 				<div class="form-area">
-					<img src="{{public_path('images/form-placeholder.jpg')}}">
+					{!!get_field('form_section_gravity_form')!!}
 				</div>
 			</div>
 		</div>
