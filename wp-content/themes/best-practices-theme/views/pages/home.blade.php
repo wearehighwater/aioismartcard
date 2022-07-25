@@ -174,20 +174,20 @@
 								</div>
 							</div>
 							<div class="data-holder">
-								<span class="data-description span1">SC1029L</span>
-								<span class="data-description span2">ePaper (2.9 inch diagonal)</span>
-								<span class="data-description span3">61.5mm x 41.0mm</span>
-								<span class="data-description span4">300 x 200 pixels</span>
-								<span class="data-description span5">Wireless Charging (Battery not required)</span>
-								<span class="data-description span6">16KB </span>
-								<span class="data-description span7">ISO/IEC 18092, JISX6319-4 compliant </span>
-								<span class="data-description span8">—</span>
-								<span class="data-description span9">—</span>
-								<span class="data-description span10">More than 1 million times</span>
-								<span class="data-description span11">0°C to 50°C / 0% to 80% (Non condensing)</span>
-								<span class="data-description span12">IP56</span>
-								<span class="data-description span13">85.6mm x 54.0mm x 3.65mm</span>
-								<span class="data-description span14">20g</span>
+								<span class="data-description span1" data-title="Model">SC1029L</span>
+								<span class="data-description span2" data-title="Display">ePaper (2.9 inch diagonal)</span>
+								<span class="data-description span3" data-title="Display Area">61.5mm x 41.0mm</span>
+								<span class="data-description span4" data-title="Resolution">300 x 200 pixels</span>
+								<span class="data-description span5" data-title="Electric Power">Wireless Charging (Battery not required)</span>
+								<span class="data-description span6" data-title="User Memory">16KB </span>
+								<span class="data-description span7" data-title="Communication (NFC)">ISO/IEC 18092, JISX6319-4 compliant </span>
+								<span class="data-description span8" data-title="Communication (UHF)">—</span>
+								<span class="data-description span9" data-title="UHF Communication Distance" >—</span>
+								<span class="data-description span10" data-title="Writable times">More than 1 million times</span>
+								<span class="data-description span11" data-title="Operating Temperature/Humidity">0°C to 50°C / 0% to 80% (Non condensing)</span>
+								<span class="data-description span12" data-title="Dustproof/Waterproof level">IP56</span>
+								<span class="data-description span13" data-title="External Dimensions">85.6mm x 54.0mm x 3.65mm</span>
+								<span class="data-description span14" data-title="Net Weight">20g</span>
 							</div>
 						</div>
 					</div>
@@ -199,20 +199,20 @@
 								</div>
 							</div>
 							<div class="data-holder">
-								<span class="data-description span1">SC1029U</span>
-								<span class="data-description span2">ePaper (2.9 inch diagonal)</span>
-								<span class="data-description span3">61.5mm x 41.0mm</span>
-								<span class="data-description span4">300 x 200 pixels</span>
-								<span class="data-description span5">Wireless Charging (Battery not required)</span>
-								<span class="data-description span6">16KB </span>
-								<span class="data-description span7">ISO/IEC 18092, JISX6319-4 compliant </span>
-								<span class="data-description span8">ISO/IEC 18000-63, (EPC Global Class 1) </span>
-								<span class="data-description span9">Maximum Reading Distance: About 3m </span>
-								<span class="data-description span10">More than 1 million times</span>
-								<span class="data-description span11">0°C to 50°C / 0% to 80% (Non condensing)</span>
-								<span class="data-description span12">IP56</span>
-								<span class="data-description span13">95.2mm x 60.9mm x 3.95mm</span>
-								<span class="data-description span14">30g</span>
+								<span class="data-description span1" data-title="Model">SC1029U</span>
+								<span class="data-description span2" data-title="Display">ePaper (2.9 inch diagonal)</span>
+								<span class="data-description span3" data-title="Display Area">61.5mm x 41.0mm</span>
+								<span class="data-description span4" data-title="Resolution">300 x 200 pixels</span>
+								<span class="data-description span5" data-title="Electric Power">Wireless Charging (Battery not required)</span>
+								<span class="data-description span6" data-title="User Memory">16KB </span>
+								<span class="data-description span7" data-title="Communication (NFC)">ISO/IEC 18092, JISX6319-4 compliant </span>
+								<span class="data-description span8" data-title="Communication (UHF)">ISO/IEC 18000-63, (EPC Global Class 1) </span>
+								<span class="data-description span9" data-title="UHF Communication Distance">Maximum Reading Distance: About 3m </span>
+								<span class="data-description span10" data-title="Writable times">More than 1 million times</span>
+								<span class="data-description span11" data-title="Operating Temperature/Humidity">0°C to 50°C / 0% to 80% (Non condensing)</span>
+								<span class="data-description span12" data-title="Dustproof/Waterproof level">IP56</span>
+								<span class="data-description span13" data-title="External Dimensions">95.2mm x 60.9mm x 3.95mm</span>
+								<span class="data-description span14" data-title="Net Weight">30g</span>
 							</div>
 						</div>
 					</div>

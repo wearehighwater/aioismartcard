@@ -1,13 +1,13 @@
 /** @define nav-opener **/
 /* stylelint-disable */
 .menu-opener {
-  @include size(31px, 16px);
+  @include size(26px, 26px);
   transition: all 0.4s ease;
   border-radius: 3px;
   background: none;
   position: absolute;
-  left: 15px;
-  top: 16px;
+  right: 15px;
+  top: 25px;
   z-index: 20;
   display: none;
 
@@ -22,8 +22,8 @@
   span {
     display: block;
     &:before {
-      @include size(31px, 2px);
-      background: $white;
+      @include size(26px, 2px);
+      background: $blue;
       transition: all 0.4s ease;
       content: '';
       position: absolute;
@@ -39,8 +39,8 @@
 
   &:after,
   &:before {
-    @include size(31px, 2px);
-    background: $white;
+    @include size(26px, 2px);
+    background: $blue;
     transition: all 0.4s ease;
     content: '';
     position: absolute;
@@ -89,17 +89,19 @@
   align-items: center;
 
   @include media-breakpoint-down(md) {
-   background: #1a5b98;
+   background: #fff;
    position: relative;
    transition: all 0.4s ease;
    transform: translateY(-100%);
-   text-align: center;
+   display: block;
 
    .menu-active & {
       transform: translateY(0);
     }
   }
 }
+
+
 
 .menu {
   display: flex;
@@ -119,19 +121,38 @@
     font-size: 16px;
   }
 
+  @include media-breakpoint-down(md) {
+    display: block;
+  }
+
   li {
     padding: 0 15px;
 
     @media (max-width: 1439px) {
       padding: 0 7px;
     }
+
+    @include media-breakpoint-down(md) {
+      padding: 0;
+      border-bottom: 1px solid $blue;
+    }
   }
 
   a {
     color: $blue;
 
+    @include media-breakpoint-down(md) {
+      display: block;
+      padding: 15px 20px;
+    }
+
     &:hover {
       color: #2c49dc;
+
+      @include media-breakpoint-down(sm) {
+        background: $blue;
+        color: #fff;
+      }
     }
   }
 }

@@ -3,9 +3,10 @@
 }
 
 .animated-circle-blue:before {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   animation: pulse 4s infinite;
+  border: 7px solid #6682fd;
 }
 @keyframes pulse {
   0% {
@@ -37,5 +38,26 @@
   100% {
     box-shadow: 0 0 0 0 rgba(50,84,254, 0);
     border: 7px solid rgba(44,73,220, 0.9);
+  }
+}
+
+.visual-area .graph-line:after {
+  width: 45px;
+  height: 45px;
+  animation: pulse 4s infinite;
+  
+}
+
+@keyframes pulse {
+  0% {
+    border: 7px solid #6682fd;
+  }
+  50% {
+    box-shadow: 0 0 0 7px rgba(50,84,254, 0.3);
+    border: 7px solid #90a0ea;
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(50,84,254, 0);
+    border: 7px solid #6682fd;
   }
 }

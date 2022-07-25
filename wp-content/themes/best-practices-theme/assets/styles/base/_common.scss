@@ -5,6 +5,11 @@ body {
   color: #012760;
   line-height: 1.555;
   background: #eff6fa;
+
+  @include media-breakpoint-down(md) {
+    font-size: 16px;
+    line-height: 20px;
+  }
   
 }
 
@@ -88,6 +93,32 @@ a {
 .h1, h1 {
   line-height: 1;
   letter-spacing: 1.4px;
+  position: relative;
+
+  @include media-breakpoint-down(md) {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  /*&:before {
+    @media (max-width: 1359px) {
+      position: absolute;
+      left: -87px;
+      top: -9px;
+      content: '';
+      border-radius: 100%;
+      background: #3254fe;
+      width: 30px;
+      height: 30px;
+      z-index: 1;
+    }
+  }*/
 }
 
 .h2, h2 {
@@ -100,6 +131,31 @@ a {
   position: relative;
   overflow: hidden;
   width: 100%;
+
+  &:before {
+    position: fixed;
+    left: 0;
+    top: 100px;
+    bottom: 0;
+    right: 0;
+    content: '';
+    background: rgba($blue, 0.85);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+
+    .menu-active & {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.menu-active {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .main {
@@ -143,6 +199,19 @@ a {
 
     .graph-line {
       top: 80px;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+        border-radius: 100%;
+        background: #3254fe;
+        width: 60px;
+        height: 60px;
+        z-index: 1;
+      }
     }
 
     .btn-play {
@@ -160,6 +229,14 @@ a {
     position: relative;
     padding-bottom: 63px;
 
+    @media (max-width: 1199px) {
+      padding-bottom: 50px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 20px;
+    }
+
     &:before {
       position: absolute;
       left: 80.2%;
@@ -174,7 +251,7 @@ a {
       }
 
       @media (max-width: 1339px) {
-        left: 78%;
+        display: none;
       }
     }
   }
@@ -186,33 +263,32 @@ a {
     letter-spacing: 1.2px;
 
     @media (max-width: 1339px) {
-      padding-left: 70px;
+      padding-left: 90px;
+    }
+
+    @media (max-width: 1199px) {
+      padding-left: 50px;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 0;
     }
   }
 
   h1 {
     position: relative;
 
+    @media (max-width: 1470px) {
+      letter-spacing: 0;
+    }
+
     @media (max-width: 1339px) {
       font-size: 30px;
       line-height: 34px;
-      letter-spacing: 0;
     }
 
     span {
       color: #2c49dc;
-    }
-
-    &:before {
-      position: absolute;
-      left: -107px;
-      top: -9px;
-      content: '';
-      border-radius: 100%;
-      background: #3254fe;
-      width: 60px;
-      height: 60px;
-      z-index: 1;
     }
   }
 
@@ -221,9 +297,60 @@ a {
       float: left;
       margin-left: -263px;
 
+      @media (max-width: 1409px) {
+        margin-left: -290px;
+      }
+
       @media (max-width: 1339px) {
         width: 200%;
+        margin-left: -370px;
       }
+
+      @media (max-width: 1199px) {
+        margin-left: -276px;
+      }
+
+      @include media-breakpoint-down(md) {
+        float: none;
+        margin: 0;
+        width: 1000px;
+        position: relative;
+        left: 50%;
+        margin-left: -490px;
+        height: auto;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: 600px;
+        margin-left: -300px;
+      }
+    }
+  }
+
+  .col-lg-6 {
+    order: 1;
+
+    &:first-child {
+      @include media-breakpoint-down(md) {
+        order: 2;
+      }
+    }
+  }
+
+  .graph-line {
+    &:after {
+      position: absolute;
+      left: auto;
+      right: -20px;
+      top: auto;
+      bottom: -30px;
+      content: '';
+      border-radius: 100%;
+      background: #fff;
+      width: 60px;
+      height: 60px;
+      z-index: 1;
+      margin-left: -30px;
     }
   }
 }
@@ -233,6 +360,30 @@ a {
   left: 22px;
   top: 19px;
   pointer-events: none;
+
+  @media (max-width: 1359px) {
+    display: none;
+  }
+
+  &:before {
+    position: absolute;
+    left: -8px;
+    top: -27px;
+    content: '';
+    border-radius: 100%;
+    background: #3254fe;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+  }
+
+  img {
+    display: block;
+
+    @media (max-width: 1339px) {
+      width: 90%;
+    }
+  }
 }
 
 .text-section {
@@ -241,6 +392,14 @@ a {
   text-align: center;
   padding: 210px 0 180px;
   letter-spacing: -0.1px;
+
+  @media (max-width: 1199px) {
+    padding: 100px 0;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 50px 0;
+  }
 
   &.style01 {
     padding: 135px 0 101px;
@@ -254,33 +413,36 @@ a {
 
   p {
     padding: 0 50px;
+
+    @media (max-width: 1199px) {
+      padding: 0;
+    }
   }
 
   .h1 {
     position: relative;
     margin: 0 0 30px;
-
-    &:before {
-      position: absolute;
-      left: 50%;
-      top: -105px;
-      content: '';
-      border-radius: 100%;
-      background: #fff;
-      width: 60px;
-      height: 60px;
-      z-index: 1;
-      margin-left: -30px;
-    }
   }
 }
 
 .features-area {
   padding: 217px 0;
 
+  @media (max-width: 1199px) {
+    padding: 70px 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 50px 0 22px;
+  }
+
   .holder {
     position: relative;
     padding: 0 0 0 120px;
+
+    @media (max-width: 1199px) {
+      padding: 0;
+    }
   }
 
   .graph-line {
@@ -288,18 +450,19 @@ a {
 
     &.style01 {
       top: 23px;
-    }
-  }
 
-  .h1 {
-    line-height: 55px;
-    margin: 0 0 90px;
-    position: relative;
+      &:before {
+        right: -10px;
+        left: auto;
+        top: auto;
+        bottom: -44px;
+      }
+    }
 
     &:before {
       position: absolute;
-      left: -107px;
-      top: -5px;
+      left: -10px;
+      top: 347px;
       content: '';
       border-radius: 100%;
       background: #3254fe;
@@ -309,15 +472,51 @@ a {
     }
   }
 
+  .h1 {
+    line-height: 55px;
+    margin: 0 0 90px;
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+      line-height: 38px;
+      margin: 0 0 30px;
+    }
+
+    br {
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+  }
+
   .col-holder {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -45px 0 -14px;
+
+    @media (max-width: 1199px) {
+      margin: 0 -20px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
+
   }
 
   .col-area {
     width: 29%;
     padding: 0 45px;
+
+    @media (max-width: 1199px) {
+      padding: 0 20px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 100% !important;
+      margin-bottom: 25px;
+    }
+
 
     &:last-child {
       width: 40%;
@@ -328,36 +527,57 @@ a {
     margin: 0 0 25px;
   }
 
-  h2 {
+  .h2 {
     margin: 0 0 23px;
+
+    @media (max-width: 1199px) {
+      font-size: 20px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 10px;
+
+    }
+
   }
 }
 
 .video-section {
   padding: 205px 0;
 
+  @media (max-width: 1199px) {
+    padding: 100px 0 50px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-top: 0;
+  }
+
   .description {
     margin-left: -18px;
     margin-right: -30px;
-    padding: 22px 0 0; 
+    padding: 22px 0 0;
+
+    @media (max-width: 1439px) {
+      margin-right: -60px;
+    }
+
+    @media (max-width: 1199px) {
+      margin: 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 30px 50px 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 10px 0 0;
+    }
   }
 
   .h1 {
     position: relative;
     margin: 0 0 24px;
-
-    &:before {
-      position: absolute;
-      left: 50%;
-      top: -110px;
-      margin-left: -42px;
-      content: '';
-      border-radius: 100%;
-      background: #3254fe;
-      width: 60px;
-      height: 60px;
-      z-index: 1;
-    }
   }
 
   .video-box {
@@ -366,6 +586,14 @@ a {
     box-shadow: 14px 19px 20px rgba(0,0,0, 0.15);
     position: relative;
     left: -15px;
+
+    @media (max-width: 1470px) {
+      left: 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 30px;
+    }
 
     img {
       @include img-style;
@@ -411,8 +639,24 @@ a {
 .topics-area {
   padding: 185px 0 287px;
 
+  @media (max-width: 1199px) {
+    padding: 100px 0 50px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 0 0 50px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 0;
+  }
+
   .holder {
     padding: 0 86px;
+
+    @media (max-width: 1199px) {
+      padding: 0;
+    }
   }
 
   .head {
@@ -426,11 +670,17 @@ a {
     position: relative;
     letter-spacing: 1px;
     margin: 0 0 23px;
+  }
+
+  .graph-line {
+    left: 50.6%;
+    top: -395px;
 
     &:before {
       position: absolute;
-      left: 50%;
-      top: -108px;
+      left: -5px;
+      top: auto;
+      bottom: -15px;
       margin-left: -22px;
       content: '';
       border-radius: 100%;
@@ -440,11 +690,6 @@ a {
       z-index: 1;
     }
   }
-
-  .graph-line {
-    left: 50.6%;
-    top: -395px;
-  }
 }
 
 .topics-blocks {
@@ -452,11 +697,35 @@ a {
   flex-wrap: wrap;
   margin: 0 -50px;
 
+  @media (max-width: 1199px) {
+    margin: 0 -20px;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin: 0 -10px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+  }
+
   .topic-block {
     padding: 0 50px;
     text-align: center;
     width: 33.333%;
     margin: 0 0 59px;
+
+    @media (max-width: 1199px) {
+      padding: 0 20px;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 0 10px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
   }
 
   p {
@@ -469,12 +738,28 @@ a {
 
   h2 {
     margin: 0 0 20px;
+
+    @media (max-width: 1199px) {
+      font-size: 22px;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 18px;
+    }
   }
 }
 
 .specifications-area {
   position: relative;
   padding: 0 0 385px;
+
+  @media (max-width: 1199px) {
+    padding: 0 0 100px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 0 0 50px;
+  }
 
   &:before {
     position: absolute;
@@ -491,6 +776,19 @@ a {
   .graph-line {
     top: -307px;
     left: 54px;
+
+    &:before {
+      position: absolute;
+      left: -20px;
+      top: auto;
+      bottom: -30px;
+      content: '';
+      border-radius: 100%;
+      background: #fff;
+      width: 60px;
+      height: 60px;
+      z-index: 1;
+    }
   }
 
   .h1 {
@@ -498,16 +796,9 @@ a {
     line-height: 41px;
     padding-top: 74px;
 
-    &:before {
-      position: absolute;
-      left: 33px;
-      top: 20px;
-      content: '';
-      border-radius: 100%;
-      background: #fff;
-      width: 60px;
-      height: 60px;
-      z-index: 1;
+    @include media-breakpoint-down(md) {
+      font-size: 25px;
+      line-height: 30px;
     }
   }
 
@@ -526,6 +817,11 @@ a {
     width: 33.433%;
     padding: 0 7px;
 
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+
+
     .head {
       display: flex;
       flex-wrap: wrap;
@@ -534,6 +830,7 @@ a {
       justify-content: center;
       padding: 15px 25px;
       background: #3252e0;
+
     }
 
     .image {
@@ -546,6 +843,11 @@ a {
     &.column-head {
       width: 29%;
 
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+
+
       .column-wrap {
         background: #3252e0;
         color: #fff;
@@ -554,6 +856,10 @@ a {
 
     &.add {
       width: 37.4%;
+
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
     }
 
     .data-title {
@@ -562,6 +868,14 @@ a {
       padding: 5px 10px 5px 25px;
       font-weight: 700;
       display: block;
+
+      @media (max-width: 1199px) {
+        font-size: 14px;
+      }
+
+      @include media-breakpoint-down(md) {
+        font-size: 11px;
+      }
 
       &:nth-child(odd) {
         background: #3c5ae1;
@@ -580,6 +894,36 @@ a {
       text-align: center;
       letter-spacing: 0.7px;
 
+      @media (max-width: 1199px) {
+        font-size: 14px;
+      }
+
+      @include media-breakpoint-down(md) {
+        font-size: 11px;
+        letter-spacing: 0;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: 16px;
+        line-height: 40px;
+        padding: 0;
+      }
+
+      &:before {
+        @include media-breakpoint-down(sm) {
+          position: relative;
+          width: 100%;
+          background: $blue;
+          color: #fff;
+          text-align: center;
+          font-size: 16px;
+          line-height: 40px;
+          padding: 0;
+          display: block;
+          content:attr(data-title);
+        }
+      }
+
       &:nth-child(odd) {
         background: #f5f7ff;
       }
@@ -595,10 +939,34 @@ a {
   margin: 0 auto;
   position: relative;
   left: -10px;
+
+  @media (max-width: 1470px) {
+    left: 0;
+  }
 }
 
 .video-section2 {
   padding: 0 0 272px;
+
+  @media (max-width: 1199px) {
+    padding: 0 0 100px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 0 0 40px;
+  }
+
+  .col-lg-7 {
+    @include media-breakpoint-down(md) {
+      order: 2;
+    }
+  }
+
+  .col-lg-5 {
+    @include media-breakpoint-down(md) {
+      order: 1;
+    }
+  }
 
   .description {
     max-width: 570px;
@@ -606,25 +974,22 @@ a {
     position: relative;
     padding-top: 20px;
     letter-spacing: 0.4px;
+
+    @include media-breakpoint-down(md) {
+      margin: 0;
+      padding: 30px 0 0;
+    }
   }
 
   .graph-line {
     top: -387px;
     left: -97px;
 
-    &.add {
-      top: 49px;
-    }
-  }
-
-  .h1 {
-    position: relative;
-    margin: 0 0 16px;
-
     &:before {
       position: absolute;
-      left: -105px;
-      top: 0;
+      left: -8px;
+      top: auto;
+      bottom: -30px;
       content: '';
       border-radius: 100%;
       background: #3254fe;
@@ -632,6 +997,22 @@ a {
       height: 60px;
       z-index: 1;
     }
+
+    &.add {
+      top: 49px;
+
+      &:before {
+        background: #fff;
+        left: auto;
+        right: -27px;
+        bottom: -30px;
+      }
+    }
+  }
+
+  .h1 {
+    position: relative;
+    margin: 0 0 16px;
   }
 
   p {
@@ -654,8 +1035,16 @@ a {
   text-align: center;
   color: #fff;
 
+  @media (max-width: 1199px) {
+    padding: 60px 0 30px;
+  }
+
   .btn-secondary {
     margin: 0 auto 110px;
+
+    @media (max-width: 1199px) {
+      margin-bottom: 40px;
+    }
 
     &:hover,
     &:active {
@@ -667,19 +1056,6 @@ a {
   .h1 {
     position: relative;
     margin: 0 0 25px;
-
-    &:before {
-      position: absolute;
-      left: 50%;
-      top: -113px;
-      margin-left: -30px;
-      content: '';
-      border-radius: 100%;
-      background: #fff;
-      width: 60px;
-      height: 60px;
-      z-index: 1;
-    }
   }
 
   p {
@@ -701,6 +1077,14 @@ a {
   position: relative;
   overflow: hidden;
 
+  @media (max-width: 1199px) {
+    padding: 100px 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 60px 0 50px;
+  }
+
   &:before {
     position: absolute;
     right: -900px;
@@ -711,6 +1095,22 @@ a {
     content: '';
     background: #e4edfa;
     border-radius: 100%;
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+
+  .col-lg-5 {
+    @include media-breakpoint-down(md) {
+      order: 1;
+    }
+  }
+
+  .col-lg-6 {
+    @include media-breakpoint-down(md) {
+      order: 2;
+    }
   }
 
   .description {
@@ -720,14 +1120,28 @@ a {
     padding: 0 0 22px;
     left: -11px;
 
+    @media (max-width: 1470px) {
+      left: 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding-top: 70px;
+    }
+
     .h1 {
       position: relative;
       margin: 0 0 30px;
+    }
+
+    .graph-line {
+      top: -387px;
+      left: -67px;
 
       &:before {
         position: absolute;
-        left: -82px;
-        top: -10px;
+        left: -15px;
+        top: auto;
+        bottom: -30px;
         content: '';
         border-radius: 100%;
         background: #3254fe;
@@ -735,16 +1149,17 @@ a {
         height: 60px;
         z-index: 4;
       }
-    }
-
-    .graph-line {
-      top: -387px;
-      left: -67px;
 
       &.add {
         top: 21px;
         left: -56px;
         z-index: 3;
+
+        &:before {
+          background: #fff;
+          left: 56px;
+          bottom: -25px;
+        }
       }
     }
 
@@ -758,11 +1173,29 @@ a {
     flex-wrap: wrap;
     justify-content: flex-end;
     position: relative;
+
+    @include media-breakpoint-down(md) {
+      justify-content: center;
+      padding-left: 80px;
+      padding-bottom: 50px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding-left: 0;
+    }
   }
 
   .image {
     position: relative;
     margin: 0 74px 0 0;
+
+    @media (max-width: 1199px) {
+      margin: 0 -50px 0 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin: 0;
+    }
 
     &:before {
       position: absolute;
@@ -783,6 +1216,19 @@ a {
     bottom: -17px;
     width: 345px;
 
+    @media (max-width: 1199px) {
+      right: 100px;
+    }
+
+    @include media-breakpoint-down(md) {
+      right: 290px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      right: -8px;
+      bottom: -40px;
+    }
+
     img {
       @include img-style;
     }
@@ -798,20 +1244,17 @@ a {
   overflow: hidden;
   box-shadow: 5px 15px 30px rgba(0,0,0, 0.1);
 
+  @include media-breakpoint-down(md) {
+    margin: 30px 0 0;
+  }
+
   .h1 {
     position: relative;
     margin: 0 0 16px;
 
-    &:before {
-      position: absolute;
-      left: -8px;
-      top: -108px;
-      content: '';
-      border-radius: 100%;
-      background: #fff;
-      width: 60px;
-      height: 60px;
-      z-index: 3;
+    @media (max-width: 1199px) {
+      font-size: 30px;
+      line-height: 38px;
     }
   }
 
@@ -824,12 +1267,29 @@ a {
     flex-direction: column;
     justify-content: center;
     padding: 30px 116px 0 64px;
+
+    @media (max-width: 1439px) {
+      padding-right: 80px;
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      padding: 40px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 18px;
+    }
   }
 
   .form-area {
     background: #f4f7f8;
     width: 50%;
     padding: 55px 45px 44px;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
 
     img {
       @include img-style;
