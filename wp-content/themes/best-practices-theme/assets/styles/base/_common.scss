@@ -1856,9 +1856,9 @@ a {
 }
 
 .gform_fields {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -36px;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  margin-left: -36px !important;
 
   .gfield {
     margin: 0 0 30px 36px;
@@ -1914,6 +1914,10 @@ a {
   &:hover {
     background: $blue;
   }
+}
+
+.gfield_label {
+  display: none;
 }
 
 .gfield_radio [type="radio"] {
