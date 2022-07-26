@@ -2164,6 +2164,10 @@ a {
   position: absolute;
   z-index: 3;
 
+  @media (max-width: 1199px) {
+    display: none !important;
+  }
+
   &:before {
     position: absolute;
     left: 20px;

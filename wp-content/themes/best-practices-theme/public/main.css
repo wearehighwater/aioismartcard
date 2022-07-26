@@ -13093,6 +13093,12 @@ h2 {
   z-index: 3;
 }
 
+@media (max-width: 1199px) {
+  .pulsating-circle {
+    display: none !important;
+  }
+}
+
 .pulsating-circle:before {
   position: absolute;
   left: 20px;
