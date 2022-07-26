@@ -46,9 +46,6 @@
                 <div class="column-holder">
                     <div class="column column-head">
                         <div class="column-wrap">
-                            <div class="graph-line">
-                                <img src="{{public_path('images/home-bg-line5.svg')}}" width="514" height="353" alt="image-description">
-                            </div>
                             <div class="head">
                                 <h2 class="h1 animated-circle-white">{{get_field('product_table_head','options')}}</h2>
                             </div>
