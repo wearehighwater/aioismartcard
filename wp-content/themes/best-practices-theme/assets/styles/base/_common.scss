@@ -186,6 +186,10 @@ a {
       padding-top: 57px;
       padding-bottom: 176px;
 
+      @media (max-width: 1359.99px) {
+        padding-bottom: 150px;
+      }
+
       @media (max-width: 991.99px) {
         padding-top: 0;
         padding-bottom: 50px;
@@ -269,7 +273,7 @@ a {
     position: relative;
     padding-bottom: 63px;
 
-    @media (max-width: 1199px) {
+    @media (max-width: 1359.99px) {
       padding-bottom: 50px;
     }
 
@@ -302,12 +306,8 @@ a {
     padding-bottom: 80px;
     letter-spacing: 1.2px;
 
-    @media (max-width: 1339px) {
-      padding-left: 90px;
-    }
-
-    @media (max-width: 1199px) {
-      padding-left: 50px;
+    @media (max-width: 1359px) {
+      padding-left: 30px;
     }
 
     @include media-breakpoint-down(md) {
@@ -322,7 +322,12 @@ a {
       letter-spacing: 0;
     }
 
-    @media (max-width: 1339px) {
+    @media (max-width: 1359px) {
+      font-size: 40px;
+      line-height: 44px;
+    }
+
+    @media (max-width: 1199px) {
       font-size: 30px;
       line-height: 34px;
     }
@@ -361,8 +366,8 @@ a {
       }
 
       @include media-breakpoint-down(sm) {
-        width: 600px;
-        margin-left: -300px;
+        width: 500px;
+        margin-left: -250px;
       }
     }
   }
@@ -430,6 +435,10 @@ a {
   padding: 210px 0 180px;
   letter-spacing: -0.1px;
 
+  @media (max-width: 1359.99px) {
+    padding: 130px 0 110px;
+  }
+
   @media (max-width: 1199px) {
     padding: 100px 0;
   }
@@ -483,6 +492,10 @@ a {
 .features-area {
   padding: 217px 0;
 
+  @media (max-width: 1359.99px) {
+    padding: 100px 0;
+  }
+
   @media (max-width: 1199px) {
     padding: 70px 0;
   }
@@ -495,7 +508,11 @@ a {
     position: relative;
     padding: 0 0 0 120px;
 
-    @media (max-width: 1199px) {
+    @media (max-width: 1359.99px) {
+      padding: 0 0 0 50px;
+    }
+
+    @media (max-width: 1199.99px) {
       padding: 0;
     }
   }
@@ -593,6 +610,10 @@ a {
 .video-section {
   padding: 205px 0 190px;
 
+  @media (max-width: 1359.99px) {
+    padding: 170px 0 130px;
+  }
+
   @media (max-width: 1199px) {
     padding: 100px 0 50px;
   }
@@ -674,6 +695,10 @@ a {
 
 .topics-area {
   padding: 185px 0 287px;
+
+  @media (max-width: 1359.99px) {
+    padding: 100px 0 70px;
+  }
 
   @media (max-width: 1199px) {
     padding: 100px 0 50px;
@@ -772,6 +797,7 @@ a {
 
     @include media-breakpoint-down(md) {
       font-size: 18px;
+      margin-bottom: 8px;
     }
   }
 }
@@ -779,6 +805,10 @@ a {
 .specifications-area {
   position: relative;
   padding: 0 0 385px;
+
+  @media (max-width: 1359.99px) {
+    padding: 0 0 150px;
+  }
 
   @media (max-width: 1199px) {
     padding: 0 0 100px;
@@ -790,18 +820,6 @@ a {
 
   .container {
     position: relative;
-  }
-
-  &:before {
-    position: absolute;
-    left: 70%;
-    top: 460px;
-    width: 606px;
-    height: 606px;
-    border-radius: 100%;
-    content: '';
-    background: #e4edfa;
-    z-index: -1;
   }
 
   .graph-line {
@@ -988,6 +1006,10 @@ a {
 .video-section2 {
   padding: 0 0 272px;
 
+  @media (max-width: 1359.99px) {
+    padding: 0 0 150px;
+  }
+
   @media (max-width: 1199px) {
     padding: 0 0 100px;
   }
@@ -1065,6 +1087,10 @@ a {
   text-align: center;
   color: #fff;
 
+  @media (max-width: 1359.99px) {
+    padding: 100px 0 30px;
+  }
+
   @media (max-width: 1199px) {
     padding: 60px 0 30px;
   }
@@ -1106,6 +1132,10 @@ a {
   padding: 295px 0 132px;
   position: relative;
   overflow: hidden;
+
+  @media (max-width: 1359.99px) {
+    padding: 200px 0 130px;
+  }
 
   @media (max-width: 1199px) {
     padding: 100px 0;
@@ -1167,6 +1197,10 @@ a {
     .h1 {
       position: relative;
       margin: 0 0 30px;
+
+      @include media-breakpoint-down(md) {
+        margin: 0 0 20px;
+      }
     }
 
     .graph-line {
@@ -1194,7 +1228,7 @@ a {
     @include media-breakpoint-down(md) {
       justify-content: center;
       padding-left: 80px;
-      padding-bottom: 50px;
+      padding-bottom: 70px;
     }
 
     @include media-breakpoint-down(sm) {
@@ -1242,8 +1276,10 @@ a {
     }
 
     @include media-breakpoint-down(sm) {
-      right: -8px;
+      right: 50%;
+      margin-right: -145px;
       bottom: -40px;
+      width: 290px;
     }
 
     img {
@@ -1273,6 +1309,11 @@ a {
       font-size: 30px;
       line-height: 38px;
     }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 26px;
+      line-height: 30px;
+    }
   }
 
   .text-area {
@@ -1286,7 +1327,7 @@ a {
     padding: 30px 116px 0 64px;
 
     @media (max-width: 1439px) {
-      padding-right: 80px;
+      padding-right: 70px;
     }
 
     @include media-breakpoint-down(md) {
@@ -1304,6 +1345,10 @@ a {
     width: 50%;
     padding: 55px 45px 44px;
 
+    @media (max-width: 1199px) {
+      padding: 30px 15px;
+    }
+
     @include media-breakpoint-down(md) {
       width: 100%;
     }
@@ -1320,6 +1365,20 @@ a {
 
   a {
     margin-right: 22px;
+
+    @include media-breakpoint-down(sm) {
+      margin-right: 5px;
+    }
+
+    &:hover {
+      img {
+        opacity: 0.75;
+      }
+    }
+  }
+
+  img {
+    transition: all 0.4s ease;
   }
 }
 
@@ -1970,10 +2029,26 @@ a {
   grid-column-gap: 0 !important;
   width: auto !important;
 
+  @media (max-width: 1199px) {
+    margin: 0 -10px !important;
+  }
+
   .gfield {
     margin: 0 0 30px 36px;
     padding: 0;
     width: calc(50% - 36px);
+
+    @media (max-width: 1199px) {
+      width: 50%;
+      margin: 0 0 20px;
+      padding: 0 10px;
+    }
+
+    @media (max-width: 767px) {
+      width: 100%;
+      margin: 0 0 20px;
+      padding: 0 10px;
+    }
   }
 
   #field_1_11,
@@ -1987,11 +2062,20 @@ a {
     padding-left: 18px;
     margin-top: 14px;
     font-weight: 400;
+
+    @media (max-width: 1199px) {
+      margin-left: 20px;
+      padding-left: 8px;
+    }
   }
 
   #field_1_7,
   #field_1_8 {
     width: calc(25% - 36px);
+
+    @media (max-width: 1199px) {
+      width: 50%;
+    }
   }
 
   input[type=text] {

@@ -10751,6 +10751,12 @@ h2 {
   padding-bottom: 176px;
 }
 
+@media (max-width: 1359.99px) {
+  .visual-area.style01 .container {
+    padding-bottom: 150px;
+  }
+}
+
 @media (max-width: 991.99px) {
   .visual-area.style01 .container {
     padding-top: 0;
@@ -10845,7 +10851,7 @@ h2 {
   padding-bottom: 63px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1359.99px) {
   .visual-area .container {
     padding-bottom: 50px;
   }
@@ -10886,15 +10892,9 @@ h2 {
   letter-spacing: 1.2px;
 }
 
-@media (max-width: 1339px) {
+@media (max-width: 1359px) {
   .visual-area .description {
-    padding-left: 90px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .visual-area .description {
-    padding-left: 50px;
+    padding-left: 30px;
   }
 }
 
@@ -10914,7 +10914,14 @@ h2 {
   }
 }
 
-@media (max-width: 1339px) {
+@media (max-width: 1359px) {
+  .visual-area h1 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+
+@media (max-width: 1199px) {
   .visual-area h1 {
     font-size: 30px;
     line-height: 34px;
@@ -10963,8 +10970,8 @@ h2 {
 
 @media (max-width: 767.98px) {
   .visual-area .image img {
-    width: 600px;
-    margin-left: -300px;
+    width: 500px;
+    margin-left: -250px;
   }
 }
 
@@ -11037,6 +11044,12 @@ h2 {
   letter-spacing: -0.1px;
 }
 
+@media (max-width: 1359.99px) {
+  .text-section {
+    padding: 130px 0 110px;
+  }
+}
+
 @media (max-width: 1199px) {
   .text-section {
     padding: 100px 0;
@@ -11100,6 +11113,12 @@ h2 {
   padding: 217px 0;
 }
 
+@media (max-width: 1359.99px) {
+  .features-area {
+    padding: 100px 0;
+  }
+}
+
 @media (max-width: 1199px) {
   .features-area {
     padding: 70px 0;
@@ -11117,7 +11136,13 @@ h2 {
   padding: 0 0 0 120px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1359.99px) {
+  .features-area .holder {
+    padding: 0 0 0 50px;
+  }
+}
+
+@media (max-width: 1199.99px) {
   .features-area .holder {
     padding: 0;
   }
@@ -11227,6 +11252,12 @@ h2 {
   padding: 205px 0 190px;
 }
 
+@media (max-width: 1359.99px) {
+  .video-section {
+    padding: 170px 0 130px;
+  }
+}
+
 @media (max-width: 1199px) {
   .video-section {
     padding: 100px 0 50px;
@@ -11327,6 +11358,12 @@ h2 {
 
 .topics-area {
   padding: 185px 0 287px;
+}
+
+@media (max-width: 1359.99px) {
+  .topics-area {
+    padding: 100px 0 70px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -11453,12 +11490,19 @@ h2 {
 @media (max-width: 991.98px) {
   .topics-blocks h2 {
     font-size: 18px;
+    margin-bottom: 8px;
   }
 }
 
 .specifications-area {
   position: relative;
   padding: 0 0 385px;
+}
+
+@media (max-width: 1359.99px) {
+  .specifications-area {
+    padding: 0 0 150px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -11475,18 +11519,6 @@ h2 {
 
 .specifications-area .container {
   position: relative;
-}
-
-.specifications-area:before {
-  position: absolute;
-  left: 70%;
-  top: 460px;
-  width: 606px;
-  height: 606px;
-  border-radius: 100%;
-  content: '';
-  background: #e4edfa;
-  z-index: -1;
 }
 
 .specifications-area .graph-line {
@@ -11699,6 +11731,12 @@ h2 {
   padding: 0 0 272px;
 }
 
+@media (max-width: 1359.99px) {
+  .video-section2 {
+    padding: 0 0 150px;
+  }
+}
+
 @media (max-width: 1199px) {
   .video-section2 {
     padding: 0 0 100px;
@@ -11789,6 +11827,12 @@ h2 {
   color: #fff;
 }
 
+@media (max-width: 1359.99px) {
+  .text-section2 {
+    padding: 100px 0 30px;
+  }
+}
+
 @media (max-width: 1199px) {
   .text-section2 {
     padding: 60px 0 30px;
@@ -11833,6 +11877,12 @@ h2 {
   padding: 295px 0 132px;
   position: relative;
   overflow: hidden;
+}
+
+@media (max-width: 1359.99px) {
+  .about-area {
+    padding: 200px 0 130px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -11910,6 +11960,12 @@ h2 {
   margin: 0 0 30px;
 }
 
+@media (max-width: 991.98px) {
+  .about-area .description .h1 {
+    margin: 0 0 20px;
+  }
+}
+
 .about-area .description .graph-line {
   top: -387px;
   left: -67px;
@@ -11943,7 +11999,7 @@ h2 {
         -ms-flex-pack: center;
             justify-content: center;
     padding-left: 80px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
   }
 }
 
@@ -12003,8 +12059,10 @@ h2 {
 
 @media (max-width: 767.98px) {
   .about-area .card-image {
-    right: -8px;
+    right: 50%;
+    margin-right: -145px;
     bottom: -40px;
+    width: 290px;
   }
 }
 
@@ -12046,6 +12104,13 @@ h2 {
   }
 }
 
+@media (max-width: 767.98px) {
+  .faq-area .h1 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
 .faq-area .text-area {
   background: #2c49dc;
   color: #fff;
@@ -12067,7 +12132,7 @@ h2 {
 
 @media (max-width: 1439px) {
   .faq-area .text-area {
-    padding-right: 80px;
+    padding-right: 70px;
   }
 }
 
@@ -12088,6 +12153,12 @@ h2 {
   background: #f4f7f8;
   width: 50%;
   padding: 55px 45px 44px;
+}
+
+@media (max-width: 1199px) {
+  .faq-area .form-area {
+    padding: 30px 15px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -12112,6 +12183,21 @@ h2 {
 
 .app-btn-holder a {
   margin-right: 22px;
+}
+
+@media (max-width: 767.98px) {
+  .app-btn-holder a {
+    margin-right: 5px;
+  }
+}
+
+.app-btn-holder a:hover img {
+  opacity: 0.75;
+}
+
+.app-btn-holder img {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .features-area2 {
@@ -12858,10 +12944,32 @@ h2 {
   width: auto !important;
 }
 
+@media (max-width: 1199px) {
+  .gform_fields {
+    margin: 0 -10px !important;
+  }
+}
+
 .gform_fields .gfield {
   margin: 0 0 30px 36px;
   padding: 0;
   width: calc(50% - 36px);
+}
+
+@media (max-width: 1199px) {
+  .gform_fields .gfield {
+    width: 50%;
+    margin: 0 0 20px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gform_fields .gfield {
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 0 10px;
+  }
 }
 
 .gform_fields #field_1_11,
@@ -12877,9 +12985,23 @@ h2 {
   font-weight: 400;
 }
 
+@media (max-width: 1199px) {
+  .gform_fields #field_1_11 {
+    margin-left: 20px;
+    padding-left: 8px;
+  }
+}
+
 .gform_fields #field_1_7,
 .gform_fields #field_1_8 {
   width: calc(25% - 36px);
+}
+
+@media (max-width: 1199px) {
+  .gform_fields #field_1_7,
+  .gform_fields #field_1_8 {
+    width: 50%;
+  }
 }
 
 .gform_fields input[type=text] {
