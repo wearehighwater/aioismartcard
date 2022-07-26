@@ -13303,11 +13303,22 @@ h2 {
 
 #gform_2 .product-image {
   background: #f5f6ff;
+  height: 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #gform_2 .product-image img {
   display: block;
-  margin: 0 auto;
   max-width: 100%;
   height: auto;
 }
@@ -13319,6 +13330,7 @@ h2 {
 
 #gform_2 #field_2_18 {
   top: 165px;
+  width: 150px;
 }
 
 #gform_2 #field_2_19 {
@@ -13334,6 +13346,7 @@ h2 {
 
 #gform_2 #field_2_21 {
   top: 340px;
+  width: 150px;
 }
 
 #gform_2 #field_2_22 {

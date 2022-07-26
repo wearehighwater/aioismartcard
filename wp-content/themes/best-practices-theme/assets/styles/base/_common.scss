@@ -2352,10 +2352,14 @@ a {
 
   .product-image {
     background: #f5f6ff;
+    height: 115px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
     img {
       display: block;
-      margin: 0 auto;
       max-width: 100%;
       height: auto;
     }
@@ -2368,6 +2372,7 @@ a {
 
   #field_2_18 {
     top: 165px;
+    width: 150px;
   }
 
   #field_2_19 {
@@ -2383,6 +2388,7 @@ a {
 
   #field_2_21 {
     top: 340px;
+    width: 150px;
   }
 
   #field_2_22 {
