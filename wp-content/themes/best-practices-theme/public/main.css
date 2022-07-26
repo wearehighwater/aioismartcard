@@ -13295,32 +13295,52 @@ h2 {
 }
 
 #gform_2 #field_2_15 {
-  top: 50px;
+  top: 60px;
+  width: 150px;
+  left: 160px;
+  margin: 0;
+}
+
+#gform_2 .product-image {
+  background: #f5f6ff;
+}
+
+#gform_2 .product-image img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 #gform_2 #field_2_17 {
-  top: 100px;
-  display: none;
+  top: 55px;
+  width: 150px;
 }
 
 #gform_2 #field_2_18 {
-  top: 150px;
-  display: none;
+  top: 165px;
 }
 
 #gform_2 #field_2_19 {
   top: 200px;
-  display: none;
+  width: 150px;
+  left: 160px;
+  margin: 0;
 }
 
 #gform_2 #field_2_20 {
-  top: 250px;
-  display: none;
+  top: 288px;
+}
+
+#gform_2 #field_2_21 {
+  top: 340px;
 }
 
 #gform_2 #field_2_22 {
-  top: 300px;
-  display: none;
+  top: 356px;
+  width: 150px;
+  left: 160px;
+  margin: 0;
 }
 
 #gform_2 #field_2_23 {
