@@ -61,6 +61,6 @@
     border: 7px solid #6682fd;
   }
 }
-
-
-
+.gform_ajax_spinner {
+  display: none !important;
+}
