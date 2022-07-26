@@ -13187,11 +13187,12 @@ h2 {
 }
 
 .gfield_validation_message {
-  padding: 0;
-  border: none;
-  font-size: 12px;
-  line-height: 20px;
-  margin: 0;
+  padding: 0 !important;
+  border: none !important;
+  font-size: 12px !important;
+  line-height: 30px !important;
+  margin: 0 !important;
+  background: none !important;
 }
 
 /** @define header **/
