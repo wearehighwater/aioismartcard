@@ -2028,6 +2028,7 @@ a {
   grid-row-gap: 0 !important;
   grid-column-gap: 0 !important;
   width: auto !important;
+  align-items: center;
 
   @media (max-width: 1199px) {
     margin: 0 -10px !important;
@@ -2104,6 +2105,10 @@ a {
   box-shadow: none;
   outline: none;
   cursor: pointer;
+  font-size: 24px;
+  line-height: 46px;
+  font-weight: 700;
+  display: block;
   transition: all 0.4s ease;
 
   &:hover {
@@ -2249,7 +2254,7 @@ a {
   background: none !important;
 }
 
-#gform_fields_2 {
+#gform_2 {
   padding-left: 339px;
   position: relative;
   font-size: 14px;
@@ -2259,8 +2264,13 @@ a {
   #field_2_1,
   #field_2_3,
   #field_2_11,
-  #field_2_12 {
+  #field_2_12,
+  #field_2_14 {
     width: 100% !important;
+  }
+
+  #field_2_13 {
+    display: none;
   }
 
   #field_2_1 {
@@ -2269,7 +2279,8 @@ a {
     font-weight: 500;
   }
 
-  #field_2_11 {
+  #field_2_11,
+  #field_2_14 {
     margin-bottom: 15px;
   }
 
@@ -2300,6 +2311,53 @@ a {
     color: #012760;
     font-weight: 700;
   }
+
+  #field_2_15 {
+
+  }
+}
+
+.ginput_container_singleproduct {
+  position: relative;
+  width: 128px;
+}
+
+.gform_fields .ginput_container_singleproduct input[type=text] {
+  width: 45px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  text-align: center;
+}
+
+.gfield_price {
+  position: relative;
+}
+
+.ginput_quantity_label {
+  display: block;
+}
+
+.ginput_product_price_wrapper {
+  position: absolute;
+  left: 72px;
+  top: 0;
+  width: 128px;
+
+  .ginput_product_price_label {
+    display: none;
+  }
+
+  .ginput_product_price {
+    line-height: 70px;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      left: -15px;
+      top: -26px;
+      content: 'x';
+    }
+  }
 }
 
 .ginput_container_select {
@@ -2307,18 +2365,18 @@ a {
 }
 
 .ginput_container_select select::-ms-expand {display: none;}
-.ginput_container_select select{
+.ginput_container_select select {
   display: inline-block;
   border: none;
-  padding: 10px 3px 10px 20px;
-  margin: 0;
-  font-size: 14px;
-  line-height: 20px;
+  padding: 10px 3px 10px 20px !important;
+  margin: 0 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
   outline: none;
-  background: #f5f6ff;
+  background: #eaeff8 !important;
   appearance: none;
-  border-radius: 8px;
-  width: 100%;
+  border-radius: 8px !important;
+  width: 100% !important;
   position: relative;
 }
 .ginput_container_select:before {
@@ -2354,4 +2412,16 @@ a {
 ::placeholder {
   color: #012760;
   opacity: 1;
+}
+
+.gform_wrapper .gfield_validation_message, 
+.gform_wrapper .validation_message {
+  border: none !important;
+  background: none !important;
+  padding: 0 !important;
+}
+
+#field_2_12 .validation_message {
+  margin-left: 36px;
+  margin-bottom: 18px;
 }
