@@ -2248,3 +2248,110 @@ a {
   margin: 0 !important;
   background: none !important;
 }
+
+#gform_fields_2 {
+  padding-left: 339px;
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+
+
+  #field_2_1,
+  #field_2_3,
+  #field_2_11,
+  #field_2_12 {
+    width: 100% !important;
+  }
+
+  #field_2_1 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  #field_2_11 {
+    margin-bottom: 15px;
+  }
+
+  #field_2_31,
+  #field_2_30 {
+    width: calc(25% - 36px);
+
+    @media (max-width: 1199px) {
+      width: 50%;
+    }
+  }
+
+  #field_2_1 {
+    margin-bottom: 55px;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  #field_2_3 {
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 24px;
+    color: #012760;
+    font-weight: 700;
+  }
+}
+
+.ginput_container_select {
+  position: relative;
+}
+
+.ginput_container_select select::-ms-expand {display: none;}
+.ginput_container_select select{
+  display: inline-block;
+  border: none;
+  padding: 10px 3px 10px 20px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  outline: none;
+  background: #f5f6ff;
+  appearance: none;
+  border-radius: 8px;
+  width: 100%;
+  position: relative;
+}
+.ginput_container_select:before {
+  font-family: 'icomoon' !important;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  content: "\e903";
+  color: #012760;
+  font-size: 16px;
+  line-height: 1;
+  pointer-events: none;
+  z-index: 9;
+}
+
+
+
+::-webkit-input-placeholder {
+  color: #012760;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #012760;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: #012760;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #012760;
+  opacity: 1;
+}
