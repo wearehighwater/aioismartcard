@@ -10991,14 +10991,14 @@ h2 {
 
 .visual-area .pulsating-circle.add {
   top: auto;
-  right: 30px;
+  right: 31px;
   bottom: 20px;
   left: auto;
 }
 
 .visual-area .pulsating-circle {
-  top: -10px;
-  left: 0;
+  top: -8px;
+  left: 2px;
 }
 
 .graph-line {
@@ -11158,7 +11158,7 @@ h2 {
 
 .features-area .pulsating-circle.add {
   left: auto;
-  right: 40px;
+  right: 41px;
   bottom: 20px;
 }
 
@@ -11414,7 +11414,7 @@ h2 {
 
 .topics-area .pulsating-circle {
   bottom: 20px;
-  left: -17px;
+  left: -18px;
 }
 
 .topics-blocks {
@@ -11528,7 +11528,7 @@ h2 {
 
 .specifications-area .pulsating-circle {
   bottom: 20px;
-  left: -10px;
+  left: -11px;
 }
 
 .specifications-area .pulsating-circle.big-circle {
@@ -11790,13 +11790,13 @@ h2 {
 }
 
 .video-section2 .pulsating-circle {
-  left: 2px;
+  left: 1px;
   bottom: 20px;
 }
 
 .video-section2 .pulsating-circle.add {
   left: auto;
-  right: 20px;
+  right: 22px;
 }
 
 .video-section2 .h1 {
@@ -11916,7 +11916,7 @@ h2 {
 .about-area .pulsating-circle {
   z-index: 5;
   left: -7px;
-  bottom: 10px;
+  bottom: 13px;
 }
 
 .about-area .pulsating-circle.add {
@@ -12267,7 +12267,7 @@ h2 {
 }
 
 .features-area2 .pulsating-circle {
-  bottom: 13px;
+  bottom: 20px;
 }
 
 .features-area2 .pulsating-circle.add {
@@ -12375,7 +12375,7 @@ h2 {
 
 .info-section2 .pulsating-circle {
   left: auto;
-  right: 20px;
+  right: 21px;
   bottom: 20px;
 }
 
@@ -12981,7 +12981,7 @@ h2 {
   margin-left: 36px;
   margin-bottom: 30px;
   padding-left: 18px;
-  margin-top: 14px;
+  margin-top: 0;
   font-weight: 400;
 }
 
@@ -13180,6 +13180,18 @@ h2 {
 .graph-line:before,
 .graph-line:after {
   display: none !important;
+}
+
+.gform_validation_errors {
+  display: none !important;
+}
+
+.gfield_validation_message {
+  padding: 0;
+  border: none;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0;
 }
 
 /** @define header **/
