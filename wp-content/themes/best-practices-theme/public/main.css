@@ -13213,7 +13213,8 @@ h2 {
 #gform_2 #field_2_3,
 #gform_2 #field_2_11,
 #gform_2 #field_2_12,
-#gform_2 #field_2_14 {
+#gform_2 #field_2_14,
+#gform_2 #field_2_20 {
   width: 100% !important;
 }
 
@@ -13263,6 +13264,58 @@ h2 {
   font-weight: 700;
 }
 
+#gform_2 #field_2_14,
+#gform_2 #field_2_17,
+#gform_2 #field_2_15,
+#gform_2 #field_2_18,
+#gform_2 #field_2_19,
+#gform_2 #field_2_20,
+#gform_2 #field_2_21,
+#gform_2 #field_2_22,
+#gform_2 #field_2_23,
+#gform_2 #field_2_24,
+#gform_2 #field_2_25 {
+  position: absolute;
+  left: -36px;
+  top: 0;
+}
+
+#gform_2 #field_2_14 {
+  top: 0;
+}
+
+#gform_2 #field_2_15 {
+  top: 50px;
+}
+
+#gform_2 #field_2_17 {
+  top: 100px;
+}
+
+#gform_2 #field_2_18 {
+  top: 150px;
+}
+
+#gform_2 #field_2_19 {
+  top: 200px;
+}
+
+#gform_2 #field_2_20 {
+  top: 250px;
+}
+
+#gform_2 #field_2_22 {
+  top: 300px;
+}
+
+#gform_2 #field_2_23 {
+  top: 350px;
+}
+
+#gform_2 #field_2_24 {
+  top: 400px;
+}
+
 .ginput_container_singleproduct {
   position: relative;
   width: 128px;
@@ -13297,6 +13350,7 @@ h2 {
 .ginput_product_price_wrapper .ginput_product_price {
   line-height: 70px;
   position: relative;
+  color: #012760;
 }
 
 .ginput_product_price_wrapper .ginput_product_price:before {

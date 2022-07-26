@@ -2265,7 +2265,8 @@ a {
   #field_2_3,
   #field_2_11,
   #field_2_12,
-  #field_2_14 {
+  #field_2_14,
+  #field_2_20 {
     width: 100% !important;
   }
 
@@ -2312,8 +2313,55 @@ a {
     font-weight: 700;
   }
 
-  #field_2_15 {
+  #field_2_14,
+  #field_2_17,
+  #field_2_15,
+  #field_2_18,
+  #field_2_19,
+  #field_2_20,
+  #field_2_21,
+  #field_2_22,
+  #field_2_23,
+  #field_2_24,
+  #field_2_25 {
+    position: absolute;
+    left: -36px;
+    top: 0;
+  }
 
+  #field_2_14 {
+    top: 0;
+  }
+
+  #field_2_15 {
+    top: 50px;
+  }
+
+  #field_2_17 {
+    top: 100px;
+  }
+
+  #field_2_18 {
+    top: 150px;
+  }
+
+  #field_2_19 {
+    top: 200px;
+  }
+
+  #field_2_20 {
+    top: 250px;
+  }
+
+  #field_2_22 {
+    top: 300px;
+  }
+
+  #field_2_23 {
+    top: 350px;
+  }
+  #field_2_24 {
+    top: 400px;
   }
 }
 
@@ -2350,6 +2398,7 @@ a {
   .ginput_product_price {
     line-height: 70px;
     position: relative;
+    color: $blue;
 
     &:before {
       position: absolute;
