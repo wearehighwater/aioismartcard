@@ -2344,7 +2344,7 @@ a {
   }
 
   #field_2_15 {
-    top: 60px;
+    top: 80px;
     width: 150px;
     left: 160px;
     margin: 0;
@@ -2371,40 +2371,66 @@ a {
   }
 
   #field_2_18 {
-    top: 165px;
+    top: 188px;
     width: 150px;
   }
 
   #field_2_19 {
-    top: 200px;
+    top: 208px;
     width: 150px;
     left: 160px;
     margin: 0;
   }
 
   #field_2_20 {
-    top: 288px;
+    top: 335px;
   }
 
   #field_2_21 {
-    top: 340px;
+    top: 380px;
     width: 150px;
   }
 
   #field_2_22 {
-    top: 356px;
+    top: 406px;
     width: 150px;
     left: 160px;
     margin: 0;
   }
 
   #field_2_23 {
-    top: 350px;
+    top: 552px;
+
+    .ginput_product_price {
+      color: $blue;
+      
+      &:before {
+        display: none;
+      }
+    }
+  }
+  #field_2_25 {
+    top: 500px;
     display: none;
+
+    .ginput_product_price {
+      color: $blue;
+
+      &:before {
+        display: none;
+      }
+    }
   }
   #field_2_24 {
-    top: 400px;
-    display: none;
+    top: 600px;
+
+    .ginput_product_price {
+      color: $blue;
+      
+      &:before {
+        display: none;
+      }
+    }
   }
 }
 
