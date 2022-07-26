@@ -13209,6 +13209,16 @@ h2 {
   line-height: 20px;
 }
 
+#gform_2:before {
+  position: absolute;
+  left: 306px;
+  top: 0;
+  bottom: 0;
+  content: '';
+  width: 2px;
+  background: #dce2ea;
+}
+
 #gform_2 #field_2_1,
 #gform_2 #field_2_3,
 #gform_2 #field_2_11,
@@ -13290,30 +13300,37 @@ h2 {
 
 #gform_2 #field_2_17 {
   top: 100px;
+  display: none;
 }
 
 #gform_2 #field_2_18 {
   top: 150px;
+  display: none;
 }
 
 #gform_2 #field_2_19 {
   top: 200px;
+  display: none;
 }
 
 #gform_2 #field_2_20 {
   top: 250px;
+  display: none;
 }
 
 #gform_2 #field_2_22 {
   top: 300px;
+  display: none;
 }
 
 #gform_2 #field_2_23 {
   top: 350px;
+  display: none;
 }
 
 #gform_2 #field_2_24 {
   top: 400px;
+  display: none;
 }
 
 .ginput_container_singleproduct {

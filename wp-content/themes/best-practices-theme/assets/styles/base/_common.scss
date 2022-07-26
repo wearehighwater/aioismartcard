@@ -2260,6 +2260,16 @@ a {
   font-size: 14px;
   line-height: 20px;
 
+  &:before {
+    position: absolute;
+    left: 306px;
+    top: 0;
+    bottom: 0;
+    content: '';
+    width: 2px;
+    background: #dce2ea;
+  }
+
 
   #field_2_1,
   #field_2_3,
@@ -2339,29 +2349,36 @@ a {
 
   #field_2_17 {
     top: 100px;
+    display: none;
   }
 
   #field_2_18 {
     top: 150px;
+    display: none;
   }
 
   #field_2_19 {
     top: 200px;
+    display: none;
   }
 
   #field_2_20 {
     top: 250px;
+    display: none;
   }
 
   #field_2_22 {
     top: 300px;
+    display: none;
   }
 
   #field_2_23 {
     top: 350px;
+    display: none;
   }
   #field_2_24 {
     top: 400px;
+    display: none;
   }
 }
 
