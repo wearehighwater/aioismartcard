@@ -238,17 +238,14 @@
 								<div class="circle" style="animation-delay: 0s"></div>
 							</div>
 						</div>
-						<h2 class="h1 animated-circle-blue">Featured Case Studies</h2>
-						<p>OMRON ASO, a product manufacturer in Japan, sought a paperless way to optimize parts traceability and product management on all levels. Watch how Smart Card seamlessly replaced instructions, paper Kanban, and tags to transform the manufacturing process at OMRON for the better.</p>
-						<a href="#" class="btn btn-primary">View All</a>
+						<h2 class="h1 animated-circle-blue">{!!get_field('home_section_6_head')!!}</h2>
+						<p>{!!get_field('home_section_6_content')!!}</p>
+						<a href="{{get_field('home_section_6_button')['url']}}" class="btn btn-primary">{{get_field('home_section_6_button')['title']}}</a>
 					</div> 
 				</div>
 				<div class="col-lg-5">
 					<div class="video-box">
-						<a href="#">
-							<img src="{{public_path('images/image5.jpg')}}" alt="image-description">
-							<span class="btn-play"></span>
-						</a>
+						{!!get_field('home_section_6_video')!!}
 					</div>
 				</div>
 			</div>
