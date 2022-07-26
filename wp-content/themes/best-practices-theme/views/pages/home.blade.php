@@ -238,17 +238,14 @@
 								<div class="circle" style="animation-delay: 0s"></div>
 							</div>
 						</div>
-						<h2 class="h1 animated-circle-blue">Featured Case Studies</h2>
-						<p>OMRON ASO, a product manufacturer in Japan, sought a paperless way to optimize parts traceability and product management on all levels. Watch how Smart Card seamlessly replaced instructions, paper Kanban, and tags to transform the manufacturing process at OMRON for the better.</p>
-						<a href="#" class="btn btn-primary">View All</a>
+						<h2 class="h1 animated-circle-blue">{!!get_field('home_section_6_head')!!}</h2>
+						<p>{!!get_field('home_section_6_content')!!}</p>
+						<a href="{{get_field('home_section_6_button')['url']}}" class="btn btn-primary">{{get_field('home_section_6_button')['title']}}</a>
 					</div> 
 				</div>
 				<div class="col-lg-5">
 					<div class="video-box">
-						<a href="#">
-							<img src="{{public_path('images/image5.jpg')}}" alt="image-description">
-							<span class="btn-play"></span>
-						</a>
+						{!!get_field('home_section_6_video')!!}
 					</div>
 				</div>
 			</div>
@@ -258,10 +255,7 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-xl-10">
-					<h2 class="h1 animated-circle-white">Claim the Benefits of ePaper Technology Today</h2>
-					<p>The longer you wait to transition to paperless labels, the more time and money you’ll lose. Put an end<br> to waste production and needless expenses today with AIOI Systems’ Visible RFID Smart Card.</p>
-					<a href="#" class="btn btn-secondary">Buy Now</a>
-					<span class="text">*If you purchase more than 10 units, please contact info@aioisystemsusa.com as shipping charges may change. There is also a discount for purchases of 500 or more cards.</span>
+					{!!get_field('home_section7')!!}
 				</div>
 			</div>
 		</div>
@@ -289,21 +283,22 @@
 								<div class="circle" style="animation-delay: 0s"></div>
 							</div>
 						</div>
-						<h2 class="h1 animated-circle-blue">Try Smart Card from Your Mobile Device</h2>
-						<p>Don’t feel pressured into purchasing our product before testing it out. Download our free demo apps and witness first-hand what Smart Card has to offer.</p>
+						<h2 class="h1 animated-circle-blue">{!!get_field('home_section_8_head')!!}</h2>
+						<p>{!!get_field('home_section_8_content')!!}</p>
 						<div class="app-btn-holder">
-							<a href="#"><img src="{{public_path('images/app-btn.png')}}" alt="image-description"></a>
-							<a href="#"><img src="{{public_path('images/google-btn.png')}}" alt="image-description"></a>
+							@foreach(get_field('apps','options') as $apps)
+								<a href="{{$apps['app_link']}}"><img src="{{$apps['app_image']}}" alt="Mobile App"></a>
+							@endforeach
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-5">
 					<div class="mob-image">
 						<div class="image">
-							<img src="{{public_path('images/image6.png')}}" alt="image-description">
+							<img src="{{get_field('home_section_8_image')}}" alt="image-description">
 						</div>
 						<div class="card-image">
-							<img src="{{public_path('images/image4.png')}}" alt="image-description">
+							<img src="{{get_field('home_section_8_image2')}}" alt="image-description">
 						</div>
 					</div>
 				</div>

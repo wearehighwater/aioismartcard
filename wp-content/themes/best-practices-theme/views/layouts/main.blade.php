@@ -36,6 +36,7 @@
             @show
 
             @section('scripts')
+                <script src="{{public_path('jquery.min.js')}}"></script>
                 <script src="{{mix('main.js')}}"></script>
                 <?php wp_footer(); ?>
             @show

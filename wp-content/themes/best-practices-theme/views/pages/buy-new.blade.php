@@ -7,8 +7,8 @@
                     <div class="row align-items-center">
                         <div class="col-lg-5">
                             <div class="description">
-                                <h1><span class="d-block">Transform Your Business with Smart Card</h1>
-                                <p>Start saving time and money today by completing this purchase form.</p>
+                                <h1><span class="d-block">{!!get_field('buy_now_visual_head')!!}</h1>
+                                <p>{!!get_field('buy_now_visual_content')!!}</p>
                                 <div class="graph-line">
                                     <img src="{{public_path('images/buy-bg-line1.svg')}}" width="693" height="643px" alt="image-description">
                                     <div class="pulsating-circle">
@@ -28,7 +28,7 @@
                         </div>
                         <div class="col-lg-7">
                             <div class="image">
-                                <img src="{{public_path('images/image16.png')}}" alt="image-description">
+                                <img src="{{get_field('buy_now_visual_image')}}" alt="image-description">
                             </div>
                         </div>
                     </div>
@@ -106,74 +106,7 @@
                         </div>
                     </div>
                     <div class="holder">
-                        <div class="prod-info">
-                            <h2>Smart Cards</h2>
-                            <div class="prod-card">
-                                <div class="image">
-                                    <img src="{{public_path('images/image13.png')}}" alt="image-description">
-                                </div>
-                                <div class="description">
-                                    <strong class="name">SC1029L</strong>
-                                    <div class="prod-card-info">
-                                        <div class="qty"><input type="text" placeholder="Qty."></div>
-                                        <span class="text">x</span>
-                                        <span class="price">$54.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="prod-card">
-                                <div class="image">
-                                    <img src="{{public_path('images/image14.png')}}" alt="image-description">
-                                </div>
-                                <div class="description">
-                                    <strong class="name">SC1029U</strong>
-                                    <div class="prod-card-info">
-                                        <div class="qty"><input type="text" placeholder="Qty."></div>
-                                        <span class="text">x</span>
-                                        <span class="price">$78.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="smart-card">
-                                <h2>Smart Card Holder</h2>
-                                <div class="prod-card">
-                                    <div class="image">
-                                        <img src="{{public_path('images/image15.png')}}" alt="image-description">
-                                    </div>
-                                    <div class="description">
-                                        <div class="prod-card-info">
-                                            <div class="qty"><input type="text" placeholder="Qty."></div>
-                                            <span class="text">x</span>
-                                            <span class="price">$2.00</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <ul class="list-unstyled prod-summary">
-                                <li>
-                                    <span class="data-title">Subtotal</span>
-                                    <span class="price">$XX.XX</span>
-                                </li>
-                                <li>
-                                    <span class="data-title">Tax</span>
-                                    <span class="price">$XX.XX</span>
-                                </li>
-                                <li>
-                                    <span class="data-title">Shipping</span>
-                                    <span class="price">$XX.XX</span>
-                                </li>
-                                <li class="total-row">
-                                    <span class="data-title">Total</span>
-                                    <span class="price">$XXX.XX</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="form-section">
-                            <p>*If you purchase more than 10 units, please contact info@aioisystemsusa.com as shipping  charges may change.<br> There is also a discount for purchases of 500 or more cards.</p>
-                            <div class="form-holder">
-                                <img src="{{public_path('images/form-placeholder2.jpg')}}" alt="">
-                            </div>
-                        </div>
+                        {!!get_field('buy_now_form')!!}
                     </div>
                 </div>
             </section>                                       
