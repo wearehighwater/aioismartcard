@@ -260,9 +260,9 @@
 			</div>
 		</div>
 	</section>
-	<section class="about-area" id="downloadApp">
+	<section class="about-area">
 		<div class="container">
-			<div class="row align-items-center">
+			<div class="row align-items-center" id="downloadApp">
 				<div class="col-lg-6">
 					<div class="description">
 						<div class="graph-line">
