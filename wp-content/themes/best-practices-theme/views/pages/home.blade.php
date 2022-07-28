@@ -308,7 +308,7 @@
 					<h2 class="h1 animated-circle-white">{!!get_field('form_section_head')!!}</h2>
 					<p>{!!get_field('form_section_content')!!}</p>
 				</div>
-				<div class="form-area">
+				<div class="form-area" id="formArea">
 					{!!get_field('form_section_gravity_form')!!}
 				</div>
 			</div>
