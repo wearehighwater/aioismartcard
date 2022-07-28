@@ -17,7 +17,7 @@
           ))
         }}
         <div class="btn-holder">
-          <a href="{{get_field('header_button','options')['url']}}" class="btn btn-secondary">{{get_field('header_button','options')['title']}}</a>
+          <a href="{{get_field('header_button','options')['url']}}" class="btn btn-secondary smooth-scroll">{{get_field('header_button','options')['title']}}</a>
           <a href="{{get_field('header_button_2','options')['url']}}" class="btn btn-primary">{{get_field('header_button_2','options')['title']}}</a>
         </div>
       </div>
