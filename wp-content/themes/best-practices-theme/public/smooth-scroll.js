@@ -6,7 +6,7 @@ jQuery(function() {
 // initialize smooth anchor links
 function initAnchors() {
 	new SmoothScroll({
-		anchorLinks: '.smooth-scroll',
+		anchorLinks: '.smooth-scroll','.smooth-scroll a',
 		extraOffset: 0,
 		wheelBehavior: 'none'
 	});
