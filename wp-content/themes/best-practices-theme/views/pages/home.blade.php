@@ -260,7 +260,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="about-area">
+	<section class="about-area" id="downloadApp">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-6">
