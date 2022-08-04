@@ -2411,7 +2411,7 @@ a {
 
   #field_2_23 {
     top: 600px;
-    width: 300px;
+    width: 278px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -2432,11 +2432,15 @@ a {
     .ginput_shipping_price {
       text-align: right;
       width: 60px;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 500;
+      color: #012760;
     }
   }
   #field_2_25 {
     top: 532px;
-    width: 300px;
+    width: 278px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -2452,11 +2456,17 @@ a {
 
     .ginput_product_price_wrapper {
       position: static;
+      display: flex;
+      justify-content: flex-end;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 500;
+      color: #012760;
     }
   }
   #field_2_24 {
     top: 650px;
-    width: 300px;
+    width: 278px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -2477,7 +2487,7 @@ a {
     .gform-text-input-reset {
       width: 60px;
       text-align: right;
-      font-weight: 700;
+      font-weight: 900;
     }
   }
 }
@@ -2661,4 +2671,12 @@ a {
 #field_2_23 .gfield_label,
 #field_2_24 .gfield_label {
   display: block !important;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #012760;
+}
+
+#field_2_24 .gfield_label {
+  font-weight: 900;
 }

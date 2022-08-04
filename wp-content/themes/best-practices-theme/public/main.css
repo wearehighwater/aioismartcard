@@ -13369,7 +13369,7 @@ h2 {
 
 #gform_2 #field_2_23 {
   top: 600px;
-  width: 300px;
+  width: 278px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13398,11 +13398,15 @@ h2 {
 #gform_2 #field_2_23 .ginput_shipping_price {
   text-align: right;
   width: 60px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #012760;
 }
 
 #gform_2 #field_2_25 {
   top: 532px;
-  width: 300px;
+  width: 278px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13426,11 +13430,21 @@ h2 {
 
 #gform_2 #field_2_25 .ginput_product_price_wrapper {
   position: static;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #012760;
 }
 
 #gform_2 #field_2_24 {
   top: 650px;
-  width: 300px;
+  width: 278px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13459,7 +13473,7 @@ h2 {
 #gform_2 #field_2_24 .gform-text-input-reset {
   width: 60px;
   text-align: right;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .ginput_container_singleproduct {
@@ -13654,6 +13668,14 @@ h2 {
 #field_2_23 .gfield_label,
 #field_2_24 .gfield_label {
   display: block !important;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #012760;
+}
+
+#field_2_24 .gfield_label {
+  font-weight: 900;
 }
 
 /** @define header **/
