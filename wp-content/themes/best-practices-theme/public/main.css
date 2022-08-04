@@ -13368,8 +13368,19 @@ h2 {
 }
 
 #gform_2 #field_2_23 {
-  top: 552px;
+  top: 600px;
   width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #gform_2 #field_2_23 .ginput_product_price {
@@ -13381,8 +13392,19 @@ h2 {
 }
 
 #gform_2 #field_2_25 {
-  top: 500px;
+  top: 532px;
   width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #gform_2 #field_2_25 .ginput_product_price {
@@ -13394,8 +13416,19 @@ h2 {
 }
 
 #gform_2 #field_2_24 {
-  top: 600px;
+  top: 650px;
   width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #gform_2 #field_2_24 .ginput_product_price {
@@ -13558,6 +13591,13 @@ h2 {
   border: none !important;
   background: none !important;
   padding: 0 !important;
+  position: absolute;
+  left: 0;
+  bottom: -26px;
+}
+
+.gfield_error {
+  position: relative;
 }
 
 #field_2_12 .validation_message {
@@ -13585,6 +13625,12 @@ h2 {
   right: 0;
   top: 36px;
   width: 47.4%;
+}
+
+#field_2_25 .gfield_label,
+#field_2_23 .gfield_label,
+#field_2_24 .gfield_label {
+  display: block !important;
 }
 
 /** @define header **/

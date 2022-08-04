@@ -2410,8 +2410,12 @@ a {
   }
 
   #field_2_23 {
-    top: 552px;
+    top: 600px;
     width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 
     .ginput_product_price {
       color: $blue;
@@ -2422,8 +2426,12 @@ a {
     }
   }
   #field_2_25 {
-    top: 500px;
+    top: 532px;
     width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 
     .ginput_product_price {
       color: $blue;
@@ -2434,8 +2442,12 @@ a {
     }
   }
   #field_2_24 {
-    top: 600px;
+    top: 650px;
     width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 
     .ginput_product_price {
       color: $blue;
@@ -2586,6 +2598,13 @@ a {
   border: none !important;
   background: none !important;
   padding: 0 !important;
+  position: absolute;
+  left: 0;
+  bottom: -26px;
+}
+
+.gfield_error {
+  position: relative;
 }
 
 #field_2_12 .validation_message {
@@ -2613,4 +2632,10 @@ a {
   right: 0;
   top: 36px;
   width: 47.4%;
+}
+
+#field_2_25 .gfield_label,
+#field_2_23 .gfield_label,
+#field_2_24 .gfield_label {
+  display: block !important;
 }
