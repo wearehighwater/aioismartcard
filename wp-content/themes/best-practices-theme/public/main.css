@@ -13565,6 +13565,25 @@ h2 {
   margin-bottom: 18px;
 }
 
+#input_2_32_2_container #input_2_32_2_cardinfo_left legend {
+  font-size: 15px;
+}
+
+#input_2_32 {
+  position: relative;
+}
+
+#input_2_32_1_container {
+  width: calc(50% - 36px);
+}
+
+#input_2_32_5_container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: calc(50% - 36px);
+}
+
 /** @define header **/
 
 /* stylelint-disable */
