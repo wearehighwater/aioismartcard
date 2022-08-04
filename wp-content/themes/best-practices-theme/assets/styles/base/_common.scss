@@ -2304,6 +2304,15 @@ a {
     }
   }
 
+  #field_2_12 {
+    display: none;
+  }
+
+  #field_2_32 {
+    width: 100%;
+    margin: 0 0 30px 36px;
+  }
+
   #field_2_1 {
     margin-bottom: 55px;
 
@@ -2514,6 +2523,42 @@ a {
   z-index: 9;
 }
 
+.ginput_card_expiration_month_container,
+.ginput_card_expiration_year_container {
+  position: relative;
+}
+
+.ginput_card_expiration_month_container select::-ms-expand {display: none;}
+.ginput_card_expiration_year_container select::-ms-expand {display: none;}
+.ginput_card_expiration_month_container select,
+.ginput_card_expiration_year_container select {
+  display: inline-block;
+  border: none;
+  padding: 10px 3px 10px 20px !important;
+  margin: 0 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  outline: none;
+  background: #eaeff8 !important;
+  appearance: none;
+  border-radius: 8px !important;
+  width: 100% !important;
+  position: relative;
+}
+.ginput_card_expiration_month_container:before,
+.ginput_card_expiration_year_container:before {
+  font-family: 'icomoon' !important;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  content: "\e903";
+  color: #012760;
+  font-size: 16px;
+  line-height: 1;
+  pointer-events: none;
+  z-index: 9;
+}
+
 
 
 ::-webkit-input-placeholder {
@@ -2547,3 +2592,4 @@ a {
   margin-left: 36px;
   margin-bottom: 18px;
 }
+
