@@ -13576,7 +13576,8 @@ h2 {
 
 #input_2_32_1_container {
   width: 47.4%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  display: block !important;
 }
 
 #input_2_32_5_container {
