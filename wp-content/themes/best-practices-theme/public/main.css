@@ -13391,6 +13391,15 @@ h2 {
   display: none;
 }
 
+#gform_2 #field_2_23 .ginput_product_price_wrapper {
+  position: static;
+}
+
+#gform_2 #field_2_23 .ginput_shipping_price {
+  text-align: right;
+  width: 60px;
+}
+
 #gform_2 #field_2_25 {
   top: 532px;
   width: 300px;
@@ -13415,6 +13424,10 @@ h2 {
   display: none;
 }
 
+#gform_2 #field_2_25 .ginput_product_price_wrapper {
+  position: static;
+}
+
 #gform_2 #field_2_24 {
   top: 650px;
   width: 300px;
@@ -13437,6 +13450,16 @@ h2 {
 
 #gform_2 #field_2_24 .ginput_product_price:before {
   display: none;
+}
+
+#gform_2 #field_2_24 .ginput_product_price_wrapper {
+  position: static;
+}
+
+#gform_2 #field_2_24 .gform-text-input-reset {
+  width: 60px;
+  text-align: right;
+  font-weight: 700;
 }
 
 .ginput_container_singleproduct {
