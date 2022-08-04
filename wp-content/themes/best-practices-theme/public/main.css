@@ -13500,7 +13500,7 @@ h2 {
   position: absolute;
   left: 72px;
   top: 0;
-  width: 128px;
+  width: 60px;
 }
 
 .ginput_product_price_wrapper .ginput_product_price_label {
@@ -13676,6 +13676,10 @@ h2 {
 
 #field_2_24 .gfield_label {
   font-weight: 900;
+}
+
+.gform_wrapper.gravity-theme .ginput_total {
+  color: #012760;
 }
 
 /** @define header **/
