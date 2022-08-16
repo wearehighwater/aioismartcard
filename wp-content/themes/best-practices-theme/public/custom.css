@@ -69,7 +69,7 @@
 }
 
 .fullwidthVideo .wp-block-embed__wrapper {
-  position: relative;
+  position: relative; margin-bottom: 50px;
   padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; 
 }
 .fullwidthVideo .wp-block-embed__wrapper iframe, .fullwidthVideo .wp-block-embed__wrapper object, 

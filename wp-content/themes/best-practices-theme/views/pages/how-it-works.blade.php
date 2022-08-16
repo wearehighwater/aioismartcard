@@ -27,7 +27,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="image">
-                        <a href="#">
+                        <a href="https://www.youtube.com/watch?v=FewJ8jI2d4E" rel="lightbox">
                             <img src="{{public_path('images/image7.jpg')}}" alt="image-description">
                             <span class="btn-play"></span>
                         </a>
