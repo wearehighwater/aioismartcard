@@ -9,7 +9,7 @@
 				<div class="container">
 					<h1>{!!get_the_title(null, null, false)!!}</h1>
 					<div class="featurs-image">
-						<img src="{{has_post_thumbnail() ? get_the_post_thumbnail_url(get_the_ID(), 'full') : public_path('images/image-placeholder.jpg')}}" alt="image-description">
+						<img src="{{has_post_thumbnail() ? get_the_post_thumbnail_url(get_the_ID(), 'full')}}" alt="image-description">
 					</div>
 					<div class="holder">
 						{!!the_content()!!}
