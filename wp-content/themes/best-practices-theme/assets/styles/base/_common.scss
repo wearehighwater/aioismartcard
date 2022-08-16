@@ -1630,6 +1630,10 @@ a {
     padding-top: 30px;
   }
 
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 10px;
+  }
+
   .description {
     padding: 137px 0 0 118px;
     position: relative;
@@ -1714,6 +1718,10 @@ a {
   &.style02 {
     padding-bottom: 102px;
     position: relative;
+
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 50px;
+    }
 
     &:before {
       top: -490px;
@@ -2534,7 +2542,7 @@ a {
       color: #012760;
     }
   }
-  
+
   #field_2_24 {
     top: 628px;
     width: 278px;
