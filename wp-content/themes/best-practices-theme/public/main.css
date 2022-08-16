@@ -13215,6 +13215,13 @@ h2 {
   }
 }
 
+@media (max-width: 767.99px) {
+  #gform_2 {
+    padding-left: 0;
+    padding-top: 700px;
+  }
+}
+
 #gform_2:before {
   position: absolute;
   left: 306px;
@@ -13228,6 +13235,12 @@ h2 {
 @media (max-width: 991.99px) {
   #gform_2:before {
     left: 250px;
+  }
+}
+
+@media (max-width: 767.99px) {
+  #gform_2:before {
+    display: none;
   }
 }
 
@@ -13248,6 +13261,12 @@ h2 {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
+}
+
+@media (max-width: 991.99px) {
+  #gform_2 #field_2_1 {
+    font-size: 14px;
+  }
 }
 
 #gform_2 #field_2_11,
@@ -13286,6 +13305,12 @@ h2 {
   margin-bottom: 55px;
 }
 
+@media (max-width: 991.99px) {
+  #gform_2 #field_2_1 {
+    margin-bottom: 25px;
+  }
+}
+
 #gform_2 #field_2_1 p {
   margin: 0;
 }
@@ -13317,6 +13342,22 @@ h2 {
   top: 0;
 }
 
+@media (max-width: 767.99px) {
+  #gform_2 #field_2_14,
+  #gform_2 #field_2_17,
+  #gform_2 #field_2_15,
+  #gform_2 #field_2_18,
+  #gform_2 #field_2_19,
+  #gform_2 #field_2_20,
+  #gform_2 #field_2_21,
+  #gform_2 #field_2_22,
+  #gform_2 #field_2_23,
+  #gform_2 #field_2_24,
+  #gform_2 #field_2_25 {
+    left: 0;
+  }
+}
+
 #gform_2 #field_2_14 {
   top: 0;
   width: 300px;
@@ -13338,6 +13379,12 @@ h2 {
 @media (max-width: 991.99px) {
   #gform_2 #field_2_15 {
     left: 108px;
+  }
+}
+
+@media (max-width: 767.99px) {
+  #gform_2 #field_2_15 {
+    left: 152px;
   }
 }
 
@@ -13386,6 +13433,12 @@ h2 {
   }
 }
 
+@media (max-width: 767.99px) {
+  #gform_2 #field_2_19 {
+    left: 152px;
+  }
+}
+
 #gform_2 #field_2_20 {
   top: 335px;
   width: 300px;
@@ -13406,6 +13459,12 @@ h2 {
 @media (max-width: 991.99px) {
   #gform_2 #field_2_22 {
     left: 108px;
+  }
+}
+
+@media (max-width: 767.99px) {
+  #gform_2 #field_2_22 {
+    left: 152px;
   }
 }
 
@@ -13750,6 +13809,18 @@ h2 {
 .gform_wrapper.gravity-theme .ginput_product_price,
 .gform_wrapper.gravity-theme .ginput_shipping_price {
   color: #012760;
+}
+
+@media (max-width: 991.99px) {
+  .gform_wrapper.gravity-theme .ginput_cardextras {
+    display: block;
+  }
+}
+
+@media (max-width: 991.99px) {
+  #input_2_32_1_container {
+    width: 100%;
+  }
 }
 
 /** @define header **/

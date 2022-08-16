@@ -2264,6 +2264,11 @@ a {
     padding-left: 275px;
   }
 
+  @media (max-width: 767.99px) {
+    padding-left: 0;
+    padding-top: 700px;
+  }
+
   &:before {
     position: absolute;
     left: 306px;
@@ -2275,6 +2280,10 @@ a {
 
     @media (max-width: 991.99px) {
       left: 250px;
+    }
+
+    @media (max-width: 767.99px) {
+      display: none;
     }
   }
 
@@ -2296,6 +2305,10 @@ a {
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
+
+    @media (max-width: 991.99px) {
+      font-size: 14px;
+    }
   }
 
   #field_2_11,
@@ -2328,6 +2341,10 @@ a {
   #field_2_1 {
     margin-bottom: 55px;
 
+    @media (max-width: 991.99px) {
+      margin-bottom: 25px;
+    }
+
     p {
       margin: 0;
     }
@@ -2358,6 +2375,10 @@ a {
     position: absolute;
     left: -36px;
     top: 0;
+
+    @media (max-width: 767.99px) {
+      left: 0;
+    }
   }
 
   #field_2_14 {
@@ -2377,6 +2398,10 @@ a {
 
     @media (max-width: 991.99px) {
       left: 108px;
+    }
+
+    @media (max-width: 767.99px) {
+      left: 152px;
     }
   }
 
@@ -2414,6 +2439,10 @@ a {
     @media (max-width: 991.99px) {
       left: 108px;
     }
+
+    @media (max-width: 767.99px) {
+      left: 152px;
+    }
   }
 
   #field_2_20 {
@@ -2435,6 +2464,10 @@ a {
     @media (max-width: 991.99px) {
       left: 108px;
     }
+
+    @media (max-width: 767.99px) {
+      left: 152px;
+    }
   }
 
   #field_2_23 {
@@ -2444,6 +2477,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
     @media (max-width: 991.99px) {
       width: 260px;
     }
@@ -2469,6 +2503,7 @@ a {
       color: #012760;
     }
   }
+
   #field_2_25 {
     top: 532px;
     width: 278px;
@@ -2499,6 +2534,7 @@ a {
       color: #012760;
     }
   }
+  
   #field_2_24 {
     top: 628px;
     width: 278px;
@@ -2732,4 +2768,16 @@ a {
 .gform_wrapper.gravity-theme .ginput_product_price, 
 .gform_wrapper.gravity-theme .ginput_shipping_price {
   color: #012760;
+}
+
+.gform_wrapper.gravity-theme .ginput_cardextras {
+  @media (max-width: 991.99px) {
+    display: block;
+  }
+}
+
+#input_2_32_1_container {
+  @media (max-width: 991.99px) {
+    width: 100%;
+  }
 }
