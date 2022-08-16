@@ -13035,7 +13035,7 @@ h2 {
   outline: none;
   cursor: pointer;
   font-size: 24px;
-  line-height: 46px;
+  line-height: 43px;
   font-weight: 700;
   display: block;
   -webkit-transition: all 0.4s ease;
@@ -13209,6 +13209,12 @@ h2 {
   line-height: 20px;
 }
 
+@media (max-width: 991.99px) {
+  #gform_2 {
+    padding-left: 275px;
+  }
+}
+
 #gform_2:before {
   position: absolute;
   left: 306px;
@@ -13217,6 +13223,12 @@ h2 {
   content: '';
   width: 2px;
   background: #dce2ea;
+}
+
+@media (max-width: 991.99px) {
+  #gform_2:before {
+    left: 250px;
+  }
 }
 
 #gform_2 #field_2_1,
@@ -13264,6 +13276,12 @@ h2 {
   margin: 0 0 30px 36px;
 }
 
+@media (max-width: 1199px) {
+  #gform_2 #field_2_32 {
+    margin-left: 10px;
+  }
+}
+
 #gform_2 #field_2_1 {
   margin-bottom: 55px;
 }
@@ -13304,11 +13322,23 @@ h2 {
   width: 300px;
 }
 
+@media (max-width: 991.99px) {
+  #gform_2 #field_2_14 {
+    width: 250px;
+  }
+}
+
 #gform_2 #field_2_15 {
   top: 80px;
   width: 150px;
   left: 160px;
   margin: 0;
+}
+
+@media (max-width: 991.99px) {
+  #gform_2 #field_2_15 {
+    left: 108px;
+  }
 }
 
 #gform_2 .product-image {
@@ -13350,6 +13380,12 @@ h2 {
   margin: 0;
 }
 
+@media (max-width: 991.99px) {
+  #gform_2 #field_2_19 {
+    left: 108px;
+  }
+}
+
 #gform_2 #field_2_20 {
   top: 335px;
   width: 300px;
@@ -13367,8 +13403,14 @@ h2 {
   margin: 0;
 }
 
+@media (max-width: 991.99px) {
+  #gform_2 #field_2_22 {
+    left: 108px;
+  }
+}
+
 #gform_2 #field_2_23 {
-  top: 600px;
+  top: 588px;
   width: 278px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13381,6 +13423,12 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 991.99px) {
+  #gform_2 #field_2_23 {
+    width: 260px;
+  }
 }
 
 #gform_2 #field_2_23 .ginput_product_price {
@@ -13420,6 +13468,12 @@ h2 {
           align-items: center;
 }
 
+@media (max-width: 991.99px) {
+  #gform_2 #field_2_25 {
+    width: 260px;
+  }
+}
+
 #gform_2 #field_2_25 .ginput_product_price {
   color: #012760;
 }
@@ -13443,7 +13497,7 @@ h2 {
 }
 
 #gform_2 #field_2_24 {
-  top: 650px;
+  top: 628px;
   width: 278px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13456,6 +13510,12 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 991.99px) {
+  #gform_2 #field_2_24 {
+    width: 260px;
+  }
 }
 
 #gform_2 #field_2_24 .ginput_product_price {
@@ -13684,6 +13744,11 @@ h2 {
 }
 
 .ginput_product_price {
+  color: #012760;
+}
+
+.gform_wrapper.gravity-theme .ginput_product_price,
+.gform_wrapper.gravity-theme .ginput_shipping_price {
   color: #012760;
 }
 

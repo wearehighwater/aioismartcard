@@ -2106,7 +2106,7 @@ a {
   outline: none;
   cursor: pointer;
   font-size: 24px;
-  line-height: 46px;
+  line-height: 43px;
   font-weight: 700;
   display: block;
   transition: all 0.4s ease;
@@ -2260,6 +2260,10 @@ a {
   font-size: 14px;
   line-height: 20px;
 
+  @media (max-width: 991.99px) {
+    padding-left: 275px;
+  }
+
   &:before {
     position: absolute;
     left: 306px;
@@ -2268,6 +2272,10 @@ a {
     content: '';
     width: 2px;
     background: #dce2ea;
+
+    @media (max-width: 991.99px) {
+      left: 250px;
+    }
   }
 
 
@@ -2311,6 +2319,10 @@ a {
   #field_2_32 {
     width: 100%;
     margin: 0 0 30px 36px;
+
+    @media (max-width: 1199px) {
+      margin-left: 10px;
+    }
   }
 
   #field_2_1 {
@@ -2351,6 +2363,10 @@ a {
   #field_2_14 {
     top: 0;
     width: 300px;
+
+    @media (max-width: 991.99px) {
+      width: 250px;
+    }
   }
 
   #field_2_15 {
@@ -2358,6 +2374,10 @@ a {
     width: 150px;
     left: 160px;
     margin: 0;
+
+    @media (max-width: 991.99px) {
+      left: 108px;
+    }
   }
 
   .product-image {
@@ -2390,6 +2410,10 @@ a {
     width: 150px;
     left: 160px;
     margin: 0;
+
+    @media (max-width: 991.99px) {
+      left: 108px;
+    }
   }
 
   #field_2_20 {
@@ -2407,15 +2431,22 @@ a {
     width: 150px;
     left: 160px;
     margin: 0;
+
+    @media (max-width: 991.99px) {
+      left: 108px;
+    }
   }
 
   #field_2_23 {
-    top: 600px;
+    top: 588px;
     width: 278px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 991.99px) {
+      width: 260px;
+    }
 
     .ginput_product_price {
       color: $blue;
@@ -2446,6 +2477,10 @@ a {
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 991.99px) {
+      width: 260px;
+    }
+
     .ginput_product_price {
       color: $blue;
 
@@ -2465,12 +2500,16 @@ a {
     }
   }
   #field_2_24 {
-    top: 650px;
+    top: 628px;
     width: 278px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 991.99px) {
+      width: 260px;
+    }
 
     .ginput_product_price {
       color: $blue;
@@ -2687,5 +2726,10 @@ a {
 }
 
 .ginput_product_price {
+  color: #012760;
+}
+
+.gform_wrapper.gravity-theme .ginput_product_price, 
+.gform_wrapper.gravity-theme .ginput_shipping_price {
   color: #012760;
 }
