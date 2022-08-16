@@ -2490,6 +2490,10 @@ a {
       width: 260px;
     }
 
+    @media (max-width: 767.99px) {
+      width: 100%;
+    }
+
     .ginput_product_price {
       color: $blue;
       
@@ -2524,6 +2528,10 @@ a {
       width: 260px;
     }
 
+    @media (max-width: 767.99px) {
+      width: 100%;
+    }
+
     .ginput_product_price {
       color: $blue;
 
@@ -2553,6 +2561,10 @@ a {
 
     @media (max-width: 991.99px) {
       width: 260px;
+    }
+
+    @media (max-width: 767.99px) {
+      width: 100%;
     }
 
     .ginput_product_price {
@@ -2789,7 +2801,7 @@ a {
     width: 100%;
   }
 }
-
+  
 #input_2_32_5_container {
   @media (max-width: 767.99px) {
     position: static;

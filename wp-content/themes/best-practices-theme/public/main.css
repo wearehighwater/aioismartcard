@@ -13502,6 +13502,12 @@ h2 {
   }
 }
 
+@media (max-width: 767.99px) {
+  #gform_2 #field_2_23 {
+    width: 100%;
+  }
+}
+
 #gform_2 #field_2_23 .ginput_product_price {
   color: #012760;
 }
@@ -13542,6 +13548,12 @@ h2 {
 @media (max-width: 991.99px) {
   #gform_2 #field_2_25 {
     width: 260px;
+  }
+}
+
+@media (max-width: 767.99px) {
+  #gform_2 #field_2_25 {
+    width: 100%;
   }
 }
 
@@ -13586,6 +13598,12 @@ h2 {
 @media (max-width: 991.99px) {
   #gform_2 #field_2_24 {
     width: 260px;
+  }
+}
+
+@media (max-width: 767.99px) {
+  #gform_2 #field_2_24 {
+    width: 100%;
   }
 }
 
