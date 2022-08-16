@@ -287,7 +287,7 @@
 						<p>{!!get_field('home_section_8_content')!!}</p>
 						<div class="app-btn-holder">
 							@foreach(get_field('apps','options') as $apps)
-								<a href="{{$apps['app_link']}}"><img src="{{$apps['app_image']}}" alt="Mobile App"></a>
+								<a href="{{$apps['app_link']}}" target="_blank"><img src="{{$apps['app_image']}}" alt="Mobile App"></a>
 							@endforeach
 						</div>
 					</div>
