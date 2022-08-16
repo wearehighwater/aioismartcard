@@ -12618,6 +12618,8 @@ h2 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
+  z-index: 9;
 }
 
 @media (max-width: 991.98px) {
