@@ -82,6 +82,9 @@ div.pp_overlay {
   z-index: 9999 !important
 }
 
+.video-section2 .video-box {
+  position: relative;
+}
 .video-section2 .video-box video {
   position: absolute;
   left: 0;
